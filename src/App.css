@@ -1,0 +1,155 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('src/imageasset/123.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 90vw;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.section {
+  width: 100%;
+  min-height: 80vh;
+  border-radius: 20px;
+  padding: 30px;
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  background-image: url('src/imageasset/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png');
+  background-repeat: no-repeat;
+  background-position-x: 450px;
+  background-position-y: 20px;
+  animation: backgroundZoom 10s  ease-in-out;
+  background-size: 110%;
+}
+
+
+.main-text {
+  height: 400px;
+  width: 500px;
+}
+
+
+.h1 {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(54, 81, 0);
+  margin: 20px;
+  margin-left: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.b1 {
+  display: block;
+  font-size: 2rem;
+  color: rgb(108, 147, 30);
+  margin: 20px;
+  margin-left: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+.b2{
+  display: block;
+  color:rgb(241, 248, 246);
+  font-size:medium;
+  margin-left: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundZoom {
+  0% {
+    background-size: 110%;
+    background-position: 450px 20px;
+  }
+  50% {
+    background-size: 120%;
+    background-position: 420px 10px;
+  }
+  100% {
+    background-size: 110%;
+    background-position: 450px 20px;
+  }
+}
+
+
+.section2 {
+  width: 100%;
+  min-height: 90vh;
+  border-radius: 20px;
+  padding: 30px;
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  /* background-image: url('src/imageasset/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png'); */
+  background-repeat: no-repeat;
+  background-position-x: 450px;
+  background-position-y: 20px;
+  
+}
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+}
+
+  .grid-item {
+    background-color: #e0f5d7;
+    border: 2px solid #a4c96f;
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .grid-item:hover {
+    background-color: #cbeab0;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    cursor: pointer;
+  }
+  
