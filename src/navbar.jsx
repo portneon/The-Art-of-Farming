@@ -46,14 +46,16 @@ function Navbar() {
 
 const styles = {
   height: "70px",
-  width: "100%",
-  color: "#00000",
+  width: "98vw",
+  color: "#f5f5f5",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
 
-  // backgroundColor: "rgba(0, 0, 0, 0.3)",
+  backgroundColor: "#1f1f1f",
   borderRadius: "15px",
+  marginTop: '25px',
+  margin:'10px',
 };
 
 const listStyle = {
@@ -68,7 +70,7 @@ const listStyle = {
   color: "#fff",
 };
 const linkStyle = {
-  color: "#000000",
+  color: "#f5f5f5",
   textDecoration: "none",
   fontWeight: "bold",
 };

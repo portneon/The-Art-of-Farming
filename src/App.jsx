@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import "./App.css";
-import Prop from "./prop";
+import Prop from "./prop.jsx";
+import Footer from "./Footer.jsx";
+import FetchAllPlants from "./datafetcher.jsx";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div> <Navbar /></div>
+      
       <div className="main-box">
         <div className="content">
           <div className="section">
@@ -29,26 +32,23 @@ function App() {
         {" "}
         <div className="content">
           <div className="section2">
-            <div class="grid-container">
-              <div class="grid-item">1</div>
-              <div class="grid-item">2</div>
-              <div class="grid-item">3</div>
-              <div class="grid-item">4</div>
-              <div class="grid-item">5</div>
-              <div class="grid-item">6</div>
-              <div class="grid-item">7</div>
-              <div class="grid-item">8</div>
-              <div class="grid-item">9</div>
-              <div class="grid-item">10</div>
-              <div class="grid-item">11</div>
-              <div class="grid-item">12</div>
+              <div className="grid-item">1</div>
+              <div className="grid-item">2</div>
+              <div className="grid-item">3</div>
+              <div className="grid-item">4</div>
+            <div className="grid-container">
+            
             </div>
           </div>
         </div>
       </div>
-
+      <Footer />
+      <Prop url={'https://perenual.com/api/species-care-guide-list?key=sk-dRMV67fff37f267189837'} />
+      <FetchAllPlants />
+   
     
     </>
+
   );
 }
 

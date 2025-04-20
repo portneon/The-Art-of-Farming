@@ -40,8 +40,8 @@ body {
   background-repeat: no-repeat;
   background-position-x: 450px;
   background-position-y: 20px;
-  animation: backgroundZoom 10s  ease-in-out;
-  background-size: 110%;
+  animation: backgroundZoom 1s  ease-in;
+  background-size: 100%;
 }
 
 
@@ -96,15 +96,15 @@ body {
 
 @keyframes backgroundZoom {
   0% {
-    background-size: 110%;
+    background-size: 95%;
     background-position: 450px 20px;
   }
   50% {
-    background-size: 120%;
+    background-size: 99%;
     background-position: 420px 10px;
   }
   100% {
-    background-size: 110%;
+    background-size: 100%;
     background-position: 450px 20px;
   }
 }
