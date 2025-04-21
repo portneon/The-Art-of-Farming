@@ -112,7 +112,7 @@ body {
 
 .section2 {
   width: 100%;
-  min-height: 90vh;
+  min-height: 60vh;
   border-radius: 20px;
   padding: 30px;
   color: #f0f0f0;
@@ -120,6 +120,7 @@ body {
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
+  justify-content: center;
   /* background-image: url('src/imageasset/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png'); */
   background-repeat: no-repeat;
   background-position-x: 450px;
@@ -134,22 +135,24 @@ body {
 }
 
   .grid-item {
+    
     background-color: #e0f5d7;
     border: 2px solid #a4c96f;
     width: 250px;
-    height: 250px;
+    height: 400px;
     padding: 25px;
     text-align: center;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     border-radius: 10px;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease; 
+    margin: 10px;
   }
   
   .grid-item:hover {
     background-color: #cbeab0;
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     cursor: pointer;
   }
   
