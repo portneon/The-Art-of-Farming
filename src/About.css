@@ -124,3 +124,109 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
+@media (max-width: 600px) {
+
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .main-titlebox {
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 20px;
+  }
+
+  .greeting-main {
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .greeting-main h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .greeting-main p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .cards {
+    width: 90%;
+    max-width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .cards:nth-child(1) { animation-delay: 1.4s; }
+  .cards:nth-child(2) { animation-delay: 1.6s; }
+  .cards:nth-child(3) { animation-delay: 1.8s; }
+  .cards:nth-child(4) { animation-delay: 2s; }
+}
+.whyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40vh; 
+  background-color: rgba(152, 251, 152, 0.1);
+  padding:40px;
+  
+}
+
+.why {
+  width: 90%;
+  max-width: 60vw;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  animation: slidePr 1.5s ease forwards;
+  
+  /* background-color: rgba(0, 0, 0, 0.15); */
+  margin-left: 20px;
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+}
+
+
+@keyframes slidePr {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.motocontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.moto{
+  height: auto;
+  padding: 30px;
+  border-radius: 24px;
+  align-items: center;
+  width:fit-content;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  color: rgb(103, 100, 24);
+}

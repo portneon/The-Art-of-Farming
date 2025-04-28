@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-// Import fonts using <style>
 const fontStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@500&display=swap');
 
@@ -27,7 +26,7 @@ function Navbar() {
         </div>
 
         <ul style={listStyle}>
-          {["Home", "About", "contact", "Prop", "login"].map((route) => (
+          {["Home", "About", "contact", "Plants", "login"].map((route) => (
             <li key={route}>
               <NavLink
                 to={`/${route}`}

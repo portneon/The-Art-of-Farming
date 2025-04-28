@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import Intersting from "./intersting";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -26,6 +27,7 @@ const ContactForm = () => {
   };
 
   return (
+    <>
     <div className="outer-wrapper">
       <div className="form-wrapper">
         <h2 className="heading">Contact Us</h2>
@@ -62,7 +64,10 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
+     
     </div>
+      <Intersting url={'https://perenual.com/api/v2/species/details/771?key=sk-dRMV67fff37f267189837'}/>
+      </>
   );
 };
 
