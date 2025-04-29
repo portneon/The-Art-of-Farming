@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
-import Intersting from "./intersting";
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,17 +13,17 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }))
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log("Sending message:", formData);
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", message: "" })
     setSubmitted(true);
 
-    setTimeout(() => setSubmitted(false), 3000);
+    setTimeout(() => setSubmitted(false), 3000)
   };
 
   return (
@@ -66,7 +66,7 @@ const ContactForm = () => {
       </div>
      
     </div>
-      <Intersting url={'https://perenual.com/api/v2/species/details/771?key=sk-dRMV67fff37f267189837'}/>
+      
       </>
   );
 };
