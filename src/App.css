@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('src/imageasset/123.png');
+  background-image: url('public/imageasset/123.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,7 +37,7 @@ body {
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
-  background-image: url('src/imageasset/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png');
+  background-image: url('public/imageasset/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png');
   background-repeat: no-repeat;
   background-position-x: 450px;
   background-position-y: 20px;
