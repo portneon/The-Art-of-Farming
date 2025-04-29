@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
-import Intersting from "./intersting";
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -66,7 +66,7 @@ const ContactForm = () => {
       </div>
      
     </div>
-      <Intersting url={'https://perenual.com/api/v2/species/details/771?key=sk-dRMV67fff37f267189837'}/>
+  
       </>
   );
 };
