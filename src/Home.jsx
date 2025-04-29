@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Intersting from "./intersting";
+import Intersting from "./Intersting";
 
 const fontStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap');
