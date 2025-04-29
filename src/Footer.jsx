@@ -79,11 +79,7 @@ const Footer = () => {
                 About
               </Link>
             </li>
-            <li style={styles.li}>
-              <Link style={styles.link} to="/climate">
-                Climate
-              </Link>
-            </li>
+          
             <li style={styles.li}>
               <Link style={styles.link} to="/Login">
                 Login
