@@ -66,11 +66,7 @@ const ContactForm = () => {
       </div>
      
     </div>
-<<<<<<< HEAD
-  
-=======
       
->>>>>>> f7339889ea24a0c4aad68ea770bdc53d268ecb57
       </>
   );
 };
