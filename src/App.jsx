@@ -16,7 +16,7 @@ function App() {
     <>
       {!hideNavbar && <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} /> {/* This is the default page */}
+        <Route path="/" element={<Home />} /> 
         <Route path="/home" element={<Home />} />
         <Route path="/Plants" element={<Prop />} />
         <Route path="/about" element={<About />} />
