@@ -13,17 +13,17 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }))
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log("Sending message:", formData);
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", message: "" })
     setSubmitted(true);
 
-    setTimeout(() => setSubmitted(false), 3000);
+    setTimeout(() => setSubmitted(false), 3000)
   };
 
   return (
@@ -66,7 +66,11 @@ const ContactForm = () => {
       </div>
      
     </div>
+<<<<<<< HEAD
   
+=======
+      
+>>>>>>> f7339889ea24a0c4aad68ea770bdc53d268ecb57
       </>
   );
 };

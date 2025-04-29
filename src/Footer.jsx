@@ -79,6 +79,10 @@ const Footer = () => {
                 About
               </Link>
             </li>
+<<<<<<< HEAD
+=======
+          
+>>>>>>> f7339889ea24a0c4aad68ea770bdc53d268ecb57
             <li style={styles.li}>
               <Link style={styles.link} to="/Login">
                 Login
