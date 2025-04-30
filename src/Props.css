@@ -96,13 +96,13 @@ box-shadow: 0px 8px 8px 20px #ffffff;
 
 .suggestion-list {
 
-  position: absolute;
-  top:100%;
+  position: relative;
+  top:0%;
   left:0%;
-  width: 30vw;
-  max-height: 300px;
+  width: 35vw;
+  max-height: 800px;
   overflow-y: auto;
-  background-color: rgba(63, 80, 47, 0.95);
+  background-color: rgba(116, 134, 100, 0.95);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-top: 0.5rem;
@@ -127,7 +127,7 @@ box-shadow: 0px 8px 8px 20px #ffffff;
   border: 1px solid rgba(108, 147, 30, 0.2);
   border-radius: 10px;
   cursor: pointer;
-  margin:5px;
+  margin:10px;
   transition: all 0.2s ease;
   color: #2c3e2a;
   box-shadow: 0px 8px 8px 20px solid rgb(5, 36, 5);
@@ -135,12 +135,13 @@ box-shadow: 0px 8px 8px 20px #ffffff;
   background-color: rgba(24, 99, 15,0.3);
   list-style-type: none;
   z-index: 1000;
+  
  
 }
 
 .suggestion-list li:hover {
   background-color: rgba(39, 54, 11, 0.7);
-  color: rgb(54, 81, 0);
+  color: rgb(253, 255, 249);
 }
 
 
