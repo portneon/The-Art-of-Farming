@@ -1,107 +1,55 @@
-import React, { useState } from "react";
-import "./App.css";
-import Intersting from "./Intersting";
 
-const fontStyles = `
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+import React from "react";
+import { ArrowRight } from "lucide-react"; 
+import TerraceEdit from "./components/TerraceEdit";
 
-  .heading-font {
-    font-family: 'Playfair Display', serif;
-  }
-
-  .body-font {
-    font-family: 'Open Sans', sans-serif;
-  }
-`;
 
 const Home = () => {
-  const [showDetail, setShowDetail] = useState(false);
-  const [detailURL, setDataURL] = useState(null);
-
-  // Array of images and their associated URLs
-  const images = [
-    {
-      url: "https://perenual.com/storage/species_image/2012_colchicum_waterlily/regular/2560px-Colchicum_27Waterlily27_03.jpg",
-      detailsURL: "https://perenual.com/api/v2/species/details/2012?key=sk-dRMV67fff37f267189837",
-      text: 'Blooming Tranquility',
-    },
-    {
-      url: "https://images.pexels.com/photos/29596320/pexels-photo-29596320/free-photo-of-close-up-of-venus-flytrap-plants-in-dark-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      detailsURL: "https://perenual.com/api/v2/species/details/2498?key=sk-dRMV67fff37f267189837",
-      text: "Nature's Living Trap",
-    },
-    {
-      url: "https://perenual.com/storage/species_image/174_albizia_julibrissin_summer_chocolate/og/4846456933_a3fd8efe99_b.jpg",
-      detailsURL: "https://perenual.com/api/v2/species/details/172?key=sk-dRMV67fff37f267189837",
-      text: "Graceful Green Canopy",
-    },
-    {
-      url: "https://perenual.com/storage/species_image/2529_dracaena_fragrans_deremensis_group_lemon_lime/og/stripe-leaves.jpg",
-      detailsURL: "https://perenual.com/api/v2/species/details/2529?key=sk-dRMV67fff37f267189837",
-      text: "Natural Patterned Beauty",
-    },
-    {
-      url: "https://live-production.wcms.abc-cdn.net.au/7704eedf4e9fa8fa8d172068be249d90?impolicy=wcms_crop_resize&cropH=2000&cropW=3000&xPos=0&yPos=16&width=862&height=575",
-      detailsURL: "https://perenual.com/api/v2/species/details/771?key=sk-dRMV67fff37f267189837",
-      text: "Nature’s Dark Perfume",
-    },
-    {
-      url: "https://perenual.com/storage/species_image/2035_conradina_verticillata/og/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsNTE2Njc3OTUyMDYtaW1hZ2UuanBn.jpg",
-      detailsURL: "https://perenual.com/api/v2/species/details/2035?key=sk-dRMV67fff37f267189837",
-      text: "Fragrant Mountain Herb",
-    }
-  ];
-
   return (
     <>
-      <style>{fontStyles}</style>
-
-      <div className="main-box body-font">
-        <div className="content">
-          <div className="section">
-            <div className="main-text">
-              <h2 className="h1 heading-font">Welcome</h2>
-              <h2 className="b1 heading-font">Discover the World of Plants</h2>
-              <h4 className="b2">
-                Uncover the secrets of 30,000+ plant species. Browse by region,
-                botanical family, or growth habit to explore the rich tapestry
-                of plant life across the globe.
-              </h4>
-            </div>
-          </div>
-        </div>
+    <section className="relative min-h-screen pt-24 px-4 sm:px-6 md:px-12 lg:px-24 flex items-center overflow-hidden">
+      {/* Background Design Element for Mobile */}
+      <div className="md:hidden absolute top-0 right-0 w-72 h-72 opacity-20 pointer-events-none">
+        <img 
+          src="/ChatGPT Image Apr 13, 2025, 12_58_46 PM.png" 
+          alt="" 
+          className="w-full h-full object-contain"
+        />
       </div>
 
-      <div className="main-box body-font">
-        <div className="content">
-          <div className="section2">
-            {showDetail ? (
-              <Intersting url={detailURL} showDetailHandler={setShowDetail} />
-            ) : (
-              <div className="grid-container">
-                {images.map((image, index) => (
-                  <div
-                    key={index}
-                    className="grid-item"
-                    style={{
-                      backgroundImage: `url(${image.url})`,
-                      backgroundSize: "cover",
-                      backgroundRepeat: "no-repeat",
-                      borderRadius: "10px",
-                    }}
-                    onClick={() => {
-                      setShowDetail(true);
-                      setDataURL(image.detailsURL); 
-                    }}
-                  >
-                    {image.text && <h1 style={{color:'#143D60'}}><strong>{image.text}</strong></h1>}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl mx-auto items-center">
+    
+        {/* Text Content */}
+        <div className="space-y-6 md:space-y-8 z-10">
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[0.95] text-primary">
+            Cultivating <br />
+            <span className="italic text-secondary">Life.</span>
+          </h1>
+          
+          <p className="font-sans text-base sm:text-lg text-gray-600 max-w-md leading-relaxed pr-8 md:pr-0">
+            Explore the botanical science and ancient wisdom behind the world's flora.
+          </p>
+
+          <button className="group flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border border-primary rounded-full text-primary hover:bg-green-800 hover:text-white transition-all duration-500 ease-out">
+            <span className="text-xs sm:text-sm tracking-widest font-sans ">EXPLORE THE CATALOG</span>
+            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
         </div>
+
+        
+        <div className="hidden md:flex relative justify-center items-center">
+          <div className="absolute w-[80%] h-[80%] bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+          <img 
+            src="/leafimage.png" 
+            alt="Botanical Specimen" 
+            className="w-full max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-in-out"
+          />
+        </div>
+       
       </div>
+      
+    </section>
+    <TerraceEdit />
     </>
   );
 };

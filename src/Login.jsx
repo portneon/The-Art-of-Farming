@@ -1,138 +1,114 @@
-import React, { useState } from "react";
-import "./LoginPage.css"; 
-import Navbar from "./navbar";
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Mail, Lock, Sprout } from "lucide-react";
 
-const LoginPage = () => {
-  const [loginData, setLoginData] = useState({
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-
-  const [isSignup, setIsSignup] = useState(false);
-  const [users, setUsers] = useState([]);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setLoginData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (isSignup) {
-      if (loginData.password !== loginData.confirmPassword) {
-        alert("Passwords do not match!");
-        return;
-      }
-      
-      const newUser = {
-        name: loginData.name,
-        email: loginData.email,
-        password: loginData.password,
-      };
-      setUsers((prevUsers) => [...prevUsers, newUser]);
-      console.log("Registered Users:", [...users, newUser]);
-      alert("Signup Successful!");
-    } else {
-      
-      const user = users.find(
-        (u) => u.email === loginData.email && u.password === loginData.password
-      );
-      if (user) {
-        alert(`Welcome back, ${user.name}!`);
-      } else {
-        alert("Invalid credentials or user not found. Please signup first!");
-      }
-    }
-
-    setLoginData({
-      name: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
-    });
-  };
-
-  const toggleMode = () => {
-    setIsSignup((prev) => !prev);
-    setLoginData({
-      name: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
-    });
-  };
-
+const Login = () => {
   return (
-    <>
-     
-
-      <div className="outer-wrapper">
-        
-        
-        <div className="form-wrapper">
-          <h1 style={{textAlign:"center"}}>{(isSignup)? " HURRAY ! WE GOT A NEW MEMBER" : "It's a pleasure to have you here again!"}</h1>
-      <h1 style={{textAlign:"center"}}>{(isSignup)? " SignUp" : "Login"}</h1>
-        <form onSubmit={handleSubmit} className="form-style">
-          {isSignup && (
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={loginData.name}
-              onChange={handleChange}
-              className="input-style"
-              required
-            />
-          )}
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={loginData.email}
-            onChange={handleChange}
-            className="input-style"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={loginData.password}
-            onChange={handleChange}
-            className="input-style"
-            required
-          />
-          {isSignup && (
-            <input
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm Password"
-              value={loginData.confirmPassword}
-              onChange={handleChange}
-              className="input-style"
-              required
-            />
-          )}
-          <button type="submit" className="button-style">
-            {isSignup ? "Sign Up" : "Login"}
-          </button>
-
-          <div className="link-container">
-            <a href="#" className="link" onClick={toggleMode}>
-              {isSignup
-                ? "Already have an account? Login"
-                : "New user? Sign Up"}
-            </a>
-          </div>
-        </form>
-      </div>
-      </div>
-      </>
+    <div className="h-screen flex bg-[#F4F5F0]">
       
+
+      <div className="hidden md:block w-1/2 relative overflow-hidden">
+     
+        <div className="absolute inset-0 bg-[#1A2F1C]/20 z-10 mix-blend-multiply"></div>
+        
+       
+        <img 
+          src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=2787&auto=format&fit=crop" 
+          alt="Vintage Botanical Illustration" 
+          className="w-full h-full object-cover animate-slow-zoom" 
+         
+        />
+        
+        
+        <div className="absolute bottom-12 left-12 z-20 text-[#F4F5F0]">
+           <p className="font-serif text-3xl italic leading-snug max-w-md">
+             "To plant a garden is to believe in tomorrow."
+           </p>
+           <p className="font-mono text-xs mt-4 tracking-[0.2em] opacity-80 uppercase">
+             Audrey Hepburn
+           </p>
+        </div>
+      </div>
+
+
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-8 md:px-24 relative ">
+        
+      
+        {/* <div className="md:hidden absolute top-0 left-0 w-full h-2 bg-[#1A2F1C]"></div> */}
+
+        <div className="w-full max-w-md space-y-12 ">
+          
+        
+          <div className="text-center md:text-left space-y-2">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#4A6741] mb-4 ">
+              <Sprout size={28} />
+            </div>
+            <h1 className="font-serif text-5xl text-[#1A2F1C]">Welcome back.</h1>
+            <p className="font-sans text-gray-500">
+              Return to your digital garden.
+            </p>
+          </div>
+
+          {/* Form */}
+          <form className="space-y-8">
+            
+            {/* Email Input - Underlined Style */}
+            <div className="group relative">
+              <label className="block font-mono text-xs text-[#4A6741] uppercase tracking-widest mb-2">
+                Email Address
+              </label>
+              <div className="relative flex items-center">
+                <Mail className="absolute left-0 text-gray-400 w-5 h-5 group-focus-within:text-[#C77D63] transition-colors" />
+                <input 
+                  type="email" 
+                  placeholder="gardener@example.com"
+                  className="w-full bg-transparent border-b border-[#1A2F1C]/20 py-3 pl-8 text-[#1A2F1C] placeholder-gray-300 focus:outline-none focus:border-[#C77D63] transition-colors font-sans"
+                />
+              </div>
+            </div>
+
+            {/* Password Input - Underlined Style */}
+            <div className="group relative">
+              <div className="flex justify-between items-center mb-2">
+                <label className="block font-mono text-xs text-[#4A6741] uppercase tracking-widest">
+                  Password
+                </label>
+                <a href="#" className="text-xs font-sans text-gray-400 hover:text-[#C77D63] transition-colors">
+                  Forgot?
+                </a>
+              </div>
+              <div className="relative flex items-center">
+                <Lock className="absolute left-0 text-gray-400 w-5 h-5 group-focus-within:text-[#C77D63] transition-colors" />
+                <input 
+                  type="password" 
+                  placeholder="••••••••"
+                  className="w-full bg-transparent border-b border-[#1A2F1C]/20 py-3 pl-8 text-[#1A2F1C] placeholder-gray-300 focus:outline-none focus:border-[#C77D63] transition-colors font-sans"
+                />
+              </div>
+            </div>
+
+        
+            <button className="w-full group bg-[#1A2F1C] text-[#F4F5F0] py-4 rounded-full font-sans tracking-widest text-xs font-bold hover:bg-[#C77D63] hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3 mt-8">
+              SIGN IN
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </button>
+
+          </form>
+
+          {/* Footer Links */}
+          <div className="text-center pt-2">
+            <p className="font-sans text-sm text-gray-500">
+              Don't have a plot yet?{" "}
+              <Link to="/register" className="font-bold text-[#1A2F1C] hover:text-[#C77D63] transition-colors border-b border-[#1A2F1C]/20 hover:border-[#C77D63]">
+                Create an account
+              </Link>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default LoginPage;
+export default Login;

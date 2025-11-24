@@ -1,241 +1,113 @@
-import React, { useEffect, useState, useRef } from "react";
-import "./Props.css";
+import React, { useEffect, useState } from "react";
+import { Search, Filter } from "lucide-react";
+import PlantCard from "./components/PlantCard.jsx";
+import SkeletonCard from "./components/SkeletonCard";
 
-function Prop() {
-  const [query, setQuery] = useState("");
+// Mock data in case localhost API fails, so you can see the design
+const MOCK_PLANTS = [
+  { id: 1, common_name: "Monstera Deliciosa", scientific_name: "Monstera deliciosa", image_url: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=800" },
+  { id: 2, common_name: "Fiddle Leaf Fig", scientific_name: "Ficus lyrata", image_url: "https://images.unsplash.com/photo-1612470120215-68048126b38c?auto=format&fit=crop&q=80&w=800" },
+  { id: 3, common_name: "Snake Plant", scientific_name: "Dracaena trifasciata", image_url: "https://images.unsplash.com/photo-1599598425947-321124233f2e?auto=format&fit=crop&q=80&w=800" },
+  { id: 4, common_name: "Rubber Plant", scientific_name: "Ficus elastica", image_url: "https://images.unsplash.com/photo-1598887142487-3c825a0b943d?auto=format&fit=crop&q=80&w=800" },
+  { id: 5, common_name: "Bird of Paradise", scientific_name: "Strelitzia reginae", image_url: "https://images.unsplash.com/photo-1545641203-7d072a14e3b2?auto=format&fit=crop&q=80&w=800" },
+  { id: 6, common_name: "Pothos", scientific_name: "Epipremnum aureum", image_url: "https://images.unsplash.com/photo-1596724852959-9f43c2c4b547?auto=format&fit=crop&q=80&w=800" },
+];
+
+function Catalog() {
   const [plants, setPlants] = useState([]);
-  const [suggestions, setSuggestions] = useState([]);
-  const [selectedPlant, setSelectedPlant] = useState(null);
-  const [careGuide, setCareGuide] = useState(null);
-  const suggestionRef = useRef();
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
 
-  // Fetch all plants
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/portneon/plantsapi/refs/heads/main/plants.json")
-      .then((res) => res.json())
-      .then((res) => {
-        if (res.data) {
-          setPlants(res.data);
-        } else {
-          console.error("No data found in response");
-        }
-      })
-      .catch((err) => console.error("Failed to fetch plants:", err));
-  }, []);
-
-  // Fetch care guide
-  const fetchCareGuide = (url) => {
-    if (!url) {
-      setCareGuide(null);
-      return;
-    }
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Care guide data:", data); // Debug
-        setCareGuide(data);
-      })
-      .catch((err) => {
-        console.error("Failed to fetch care guide:", err);
-        setCareGuide(null);
-      });
-  };
-
-  // Close suggestion list on click outside or escape
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (suggestionRef.current && !suggestionRef.current.contains(e.target)) {
-        setSuggestions([]);
+    
+    const fetchPlants = async () => {
+      try {
+        setLoading(true);
+        
+        const response = await fetch("http://localhost:3000/api/plants");
+        
+        if (!response.ok) throw new Error("API not available");
+        
+        const result = await response.json();
+        setPlants(result.data);
+      } catch (error) {
+        console.warn("API failed, using Mock Data for Design Showcase:", error);
+        
+        setTimeout(() => {
+            setPlants(MOCK_PLANTS);
+        }, 1500); 
+      } finally {
+        setTimeout(() => setLoading(false), 1500);
       }
     };
 
-    const handleEscapeKey = (e) => {
-      if (e.key === "Escape") {
-        setSuggestions([]);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("keydown", handleEscapeKey);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("keydown", handleEscapeKey);
-    };
+    fetchPlants();
   }, []);
 
-  // Handle input changes
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setQuery(value);
-
-    if (value.length > 0) {
-      const filtered = plants.filter(
-        (plant) =>
-          plant.common_name &&
-          plant.common_name.toLowerCase().includes(value.toLowerCase())
-      );
-      setSuggestions(filtered);
-    } else {
-      setSuggestions([]);
-    }
-  };
-
-  // On plant select
-  const handlePlantSelect = (plant) => {
-    if (!plant) return;
-    setSelectedPlant(plant);
-    setQuery(plant.common_name || "");
-    setSuggestions([]);
-    if (plant.care_guides) {
-      fetchCareGuide(plant.care_guides);
-    } else {
-      setCareGuide(null);
-    }
-  };
+  
+  const filteredPlants = plants.filter((plant) =>
+    plant.common_name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <>
-      <div className="search-nav">
-        <div className="search-container" ref={suggestionRef}>
-          <h1 className="plants-title">
-            {selectedPlant ? selectedPlant.common_name : "Search for a Plant"}
-          </h1>
+    <div className=" min-h-screen bg-[#F4F5F0] pt-24 pb-20 px-6 md:px-12 lg:px-20">
+      
+   
+      <div className="max-w-7xl mx-auto mb-16 text-center">
+        <h1 className="font-serif text-5xl md:text-6xl text-[#1A2F1C] mb-6">
+          The Botanical <span className="italic text-[#4A6741]">Catalog.</span>
+        </h1>
+        <p className="font-sans text-gray-500 max-w-2xl mx-auto text-lg">
+          A curated collection of nature's finest specimens, indexed for the modern grower.
+        </p>
+      </div>
 
-          <div className="dummy">
-            <input
-              className="input-field"
-              placeholder="Type the name of the plant..."
-              value={query}
-              onChange={handleInputChange}
-            />
-
-            {suggestions.length > 0 && (
-              <ul className="suggestion-list">
-                {suggestions.map((plant, idx) => (
-                  <li
-                    key={plant.id ? `${plant.id}-${idx}` : idx}
-                    onClick={() => handlePlantSelect(plant)}
-                    className="suggestion-list-items"
-                  >
-                    {plant.common_name}
-                  </li>
-                ))}
-              </ul>
-            )}
+      <div className="sticky top-24 z-30 max-w-3xl mx-auto mb-16">
+        <div className="relative group">
+          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <Search className="h-5 w-5 text-gray-400 group-focus-within:text-[#C77D63] transition-colors" />
+          </div>
+          <input
+            type="text"
+            className="block w-full pl-12 pr-4 py-4 bg-white/80 backdrop-blur-md border border-gray-200 rounded-full text-[#1A2F1C] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C77D63]/20 focus:border-[#C77D63] transition-all shadow-sm hover:shadow-md font-sans"
+            placeholder="Search by species name..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+             <button className="p-2 text-gray-400 hover:text-[#1A2F1C] transition-colors">
+                <Filter className="h-5 w-5" />
+             </button>
           </div>
         </div>
       </div>
 
-      {/* No plant selected */}
-      {!selectedPlant && (
-        <div className="no-selection-message">
-          <h2>Please search and select a plant to see details!</h2>
-        </div>
-      )}
-
-      {/* Plant selected */}
-      {selectedPlant && (
-        <div className="content">
-          <div className="title-head">
-            <div className="inner-container">
-              {/* Left - Info */}
-              <div className="discription-section">
-                <div className="head-title">
-                  <h2 style={{ color: "#D3F1DF" }}>
-                    Scientific Name: {selectedPlant.scientific_name || "N/A"}
-                  </h2>
-                  <h3>Genus: {selectedPlant.genus || "Unknown"}</h3>
-                  <h3>Cultivar: {selectedPlant.cultivar || "Unknown"}</h3>
-                </div>
-                <div className="description-sectionin">
-                  <h3>Description:</h3>
-                  <p>{selectedPlant.description || "No description available."}</p>
-                </div>
-              </div>
-
-              {/* Right - Image */}
-              <div className="photo-head">
-                {selectedPlant.default_image?.original_url ? (
-                  <img
-                    src={selectedPlant.default_image.original_url}
-                    alt={selectedPlant.common_name}
-                    height="500px"
-                    width="400px"
-                  />
-                ) : (
-                  <p>No image available.</p>
-                )}
-              </div>
-            </div>
-
-            {/* Care Guide Section */}
-            <div className="species-care">
-              <h4>Care Guide:</h4>
-              {careGuide?.data?.[0]?.section?.length > 0 ? (
-                <ul>
-                  {careGuide.data[0].section.map((section, idx) => (
-                    <li key={idx}>
-                      <strong>
-                        {section.type.charAt(0).toUpperCase() + section.type.slice(1)}:
-                      </strong>{" "}
-                      {section.description}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No care guide available for this plant.</p>
-              )}
-            </div>
-
-            {/* Propagation Section */}
-            <div className="propagation-section">
-              <h4>Propagation Methods:</h4>
-              {selectedPlant.propagation?.length > 0 ? (
-                <ul>
-                  {selectedPlant.propagation.map((method, idx) => (
-                    <li key={idx} className="propagation-method">
-                      {method}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No propagation methods available.</p>
-              )}
-            </div>
-
-            {/* Hardiness Map */}
-            <div className="hardiness-map-section" style={{ marginTop: "40px" }}>
-              <h3 style={{ color: "#a4c96f" }}>Propagation Distribution Map:</h3>
-              {selectedPlant?.id ? (
-                <div
-                  className="iframe-container"
-                  style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
-                >
-                  <iframe
-                    frameBorder="0"
-                    scrolling="yes"
-                    seamless="seamless"
-                    width="1000"
-                    height="550"
-                    src={`https://perenual.com/api/hardiness-map?species_id=${selectedPlant.id}&size=og&key=sk-dRMV67fff37f267189837`}
-                    title="Hardiness Map"
-                  ></iframe>
-                </div>
-              ) : (
-                <p>Hardiness map not available.</p>
-              )}
-            </div>
-
-            {/* Debug Care Guide JSON */}
-            {/* <pre style={{ color: "#fff", background: "#333", padding: "10px" }}>
-              {JSON.stringify(careGuide, null, 2)}
-            </pre> */}
+    
+      <div className="max-w-7xl mx-auto">
+        {loading ? (
+         
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <SkeletonCard key={n} />
+            ))}
           </div>
-        </div>
-      )}
-    </>
+        ) : filteredPlants.length > 0 ? (
+          // Actual Data
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredPlants.map((plant) => (
+              <PlantCard key={plant.id} plant={plant} />
+            ))}
+          </div>
+        ) : (
+          // No Results State
+          <div className="text-center py-20 opacity-60">
+             <h2 className="font-serif text-2xl text-[#1A2F1C]">No specimens found.</h2>
+             <p className="font-sans text-gray-500 mt-2">Try adjusting your search criteria.</p>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
 
-export default Prop;
+export default Catalog;
