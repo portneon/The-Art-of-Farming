@@ -3,15 +3,7 @@ import { Search, Filter } from "lucide-react";
 import PlantCard from "./components/PlantCard.jsx";
 import SkeletonCard from "./components/SkeletonCard";
 
-// Mock data in case localhost API fails, so you can see the design
-const MOCK_PLANTS = [
-  { id: 1, common_name: "Monstera Deliciosa", scientific_name: "Monstera deliciosa", image_url: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=800" },
-  { id: 2, common_name: "Fiddle Leaf Fig", scientific_name: "Ficus lyrata", image_url: "https://images.unsplash.com/photo-1612470120215-68048126b38c?auto=format&fit=crop&q=80&w=800" },
-  { id: 3, common_name: "Snake Plant", scientific_name: "Dracaena trifasciata", image_url: "https://images.unsplash.com/photo-1599598425947-321124233f2e?auto=format&fit=crop&q=80&w=800" },
-  { id: 4, common_name: "Rubber Plant", scientific_name: "Ficus elastica", image_url: "https://images.unsplash.com/photo-1598887142487-3c825a0b943d?auto=format&fit=crop&q=80&w=800" },
-  { id: 5, common_name: "Bird of Paradise", scientific_name: "Strelitzia reginae", image_url: "https://images.unsplash.com/photo-1545641203-7d072a14e3b2?auto=format&fit=crop&q=80&w=800" },
-  { id: 6, common_name: "Pothos", scientific_name: "Epipremnum aureum", image_url: "https://images.unsplash.com/photo-1596724852959-9f43c2c4b547?auto=format&fit=crop&q=80&w=800" },
-];
+
 
 function Catalog() {
   const [plants, setPlants] = useState([]);
@@ -24,18 +16,16 @@ function Catalog() {
       try {
         setLoading(true);
         
-        const response = await fetch("http://localhost:3000/api/plants");
+        const response = await fetch("http://localhost:3000/plants");
         
         if (!response.ok) throw new Error("API not available");
         
         const result = await response.json();
         setPlants(result.data);
       } catch (error) {
-        console.warn("API failed, using Mock Data for Design Showcase:", error);
+        console.warn("error while fetching plant data ", error);
         
-        setTimeout(() => {
-            setPlants(MOCK_PLANTS);
-        }, 1500); 
+        
       } finally {
         setTimeout(() => setLoading(false), 1500);
       }
@@ -43,6 +33,7 @@ function Catalog() {
 
     fetchPlants();
   }, []);
+
 
   
   const filteredPlants = plants.filter((plant) =>
@@ -92,14 +83,14 @@ function Catalog() {
             ))}
           </div>
         ) : filteredPlants.length > 0 ? (
-          // Actual Data
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPlants.map((plant) => (
               <PlantCard key={plant.id} plant={plant} />
             ))}
           </div>
         ) : (
-          // No Results State
+         
           <div className="text-center py-20 opacity-60">
              <h2 className="font-serif text-2xl text-[#1A2F1C]">No specimens found.</h2>
              <p className="font-sans text-gray-500 mt-2">Try adjusting your search criteria.</p>

@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #F4F5F0; 
+  background-color: #F4F5F0;
   color: #1A2F1C;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,12 +14,19 @@ body {
 
 
 ::-webkit-scrollbar {
-  width: 8px;
+  display: none;
 }
-::-webkit-scrollbar-track {
-  background: #F4F5F0;
+
+
+html {
+  scrollbar-width: none;
 }
-::-webkit-scrollbar-thumb {
-  background: #4A6741;
-  border-radius: 4px;
+
+
+body {
+  -ms-overflow-style: none;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
 }
