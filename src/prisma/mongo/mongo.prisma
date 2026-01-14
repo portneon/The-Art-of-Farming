@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URL")
+}
+model PlantInfo {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  plantId     String   
+  description String?
+  careTips    String?
+  soilInfo    String?
+  aiSummary   String?   
+}
+model ChatSummary {
+  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String
+  plantId   String
+  summary   String  
+  createdAt DateTime @default(now())
+}
