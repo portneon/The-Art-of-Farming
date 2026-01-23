@@ -40,10 +40,10 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-[#F4F5F0] mt-15">
+    <div className="h-screen flex bg-[#F4F5F0]">
 
 
-      <div className="hidden md:block w-1/2 relative overflow-hidden">
+      <div className="hidden md:block w-1/2 relative overflow-hidden mt-15px">
         <div className="absolute inset-0 bg-[#1A2F1C]/20 z-10 mix-blend-multiply"></div>
 
 
@@ -70,11 +70,12 @@ const Register = () => {
 
         <div className="md:hidden absolute top-0 left-0 w-full h-2 bg-[#1A2F1C]"></div>
 
-        <div className="w-full max-w-md space-y-10">
+        <div className="w-full max-w-md space-y-5">
+
 
 
           <div className="text-center md:text-left space-y-2">
-            <div className="flex items-center justify-center md:justify-start gap-2 text-[#4A6741] mb-4">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#4A6741] mb-4 mt-15px">
               <Sprout size={28} />
             </div>
             <h1 className="font-serif text-5xl text-[#1A2F1C]">Join us.</h1>

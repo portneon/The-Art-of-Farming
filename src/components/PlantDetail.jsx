@@ -60,7 +60,7 @@ const PlantDetail = () => {
           return;
         }
 
-        // 2. Fetch from Backend
+        
         const response = await fetch(`http://localhost:3000/plants/${id}`);
 
         if (!response.ok) {
@@ -83,7 +83,7 @@ const PlantDetail = () => {
     fetchPlantData();
   }, [id, location.state]);
 
-  // --- LOADING STATE ---
+
   if (loading) return (
     <div className="min-h-screen bg-[#F4F5F0] flex items-center justify-center">
       <div className="flex flex-col items-center gap-4">
@@ -93,7 +93,7 @@ const PlantDetail = () => {
     </div>
   );
 
-  // --- ERROR STATE ---
+
   if (error || !plant) return (
     <div className="min-h-screen bg-[#F4F5F0] flex items-center justify-center">
       <div className="text-center">
@@ -109,7 +109,6 @@ const PlantDetail = () => {
   return (
     <div className="min-h-screen bg-[#F4F5F0] text-[#1A2F1C] pb-20 pt-24 font-sans selection:bg-[#C77D63] selection:text-white">
 
-      {/* --- BREADCRUMBS --- */}
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <Link to="/plants" className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#1A2F1C]/40 hover:text-[#1A2F1C] transition-colors">
           <ArrowLeft size={14} /> Back to Catalog
@@ -118,9 +117,7 @@ const PlantDetail = () => {
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
 
-        {/* --- LEFT COL: VISUALS (5 Cols) --- */}
         <div className="lg:col-span-5 flex flex-col gap-8">
-          {/* Main Image Stage */}
           <div className="relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl shadow-[#1A2F1C]/20 group">
             <img
               src={plant.image_url}
@@ -130,14 +127,12 @@ const PlantDetail = () => {
             <div className="absolute inset-0 border-[12px] border-white/90"></div>
           </div>
 
-          {/* Scientific Classification Badges */}
           <div className="flex flex-wrap gap-2 justify-center">
             <Badge label="Family" value={plant.family} />
             <Badge label="Origin" value={plant.origin} />
             <Badge label="Type" value={plant.stats.difficulty} />
           </div>
 
-          {/* Quick Stats Grid (Minimalist) */}
           <div className="grid grid-cols-3 gap-4 border-t border-[#1A2F1C]/10 pt-6">
             <div className="text-center">
               <span className="block text-[10px] font-mono uppercase tracking-widest text-[#1A2F1C]/40 mb-1">Toxicity</span>
@@ -154,10 +149,8 @@ const PlantDetail = () => {
           </div>
         </div>
 
-        {/* --- RIGHT COL: INFORMATION (7 Cols) --- */}
         <div className="lg:col-span-7 flex flex-col">
 
-          {/* 1. Header Section (Clean, No Box) */}
           <div className="mb-10">
             <h1 className="font-serif text-5xl md:text-6xl text-[#1A2F1C] mb-2 leading-tight">
               {plant.common_name}

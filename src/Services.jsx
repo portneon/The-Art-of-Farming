@@ -71,7 +71,7 @@ const Services = () => {
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#C77D63]/5 rounded-full blur-3xl -z-10"></div>
             </section>
 
-            {/* Services Grid */}
+
             <section className="py-24 px-6 md:px-20 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,7 +109,7 @@ const Services = () => {
                 </div>
             </section>
 
-            {/* CTA Section */}
+     
             <section className="py-24 px-6 md:px-20 bg-[#1A2F1C] text-[#F4F5F0]">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="font-serif text-4xl md:text-5xl mb-6">
@@ -136,7 +136,6 @@ const Services = () => {
                 </div>
             </section>
 
-            {/* Final Quote */}
             <section className="py-32 px-6 text-center bg-[#F4F5F0] relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 w-px h-20 bg-[#1A2F1C]/10 -translate-x-1/2"></div>
 

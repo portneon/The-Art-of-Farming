@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import Prop from "./Plants";
 import About from "./About";
 import Home from "./Home";
-import Services from "./Services";
 import Register from "./Register";
 import LoginPage from "./Login";
 import Dashboard from "./Dashboard";
@@ -26,7 +25,6 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/Plants" element={<Prop />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/Login" element={<LoginPage />} />

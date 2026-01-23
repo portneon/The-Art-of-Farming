@@ -2,12 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Plus, Sun, Droplets, Wind, MoreVertical } from "lucide-react";
 
-const MY_PLANTS = [
-    { id: 1, name: "Monstera Deliciosa", location: "Living Room", status: "Healthy", water_in: "3 days", img: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=200" },
-    { id: 2, name: "Fiddle Leaf Fig", location: "Bedroom", status: "Needs Water", water_in: "Today", img: "https://images.unsplash.com/photo-1612470120215-68048126b38c?auto=format&fit=crop&q=80&w=200" },
-    { id: 3, name: "Snake Plant", location: "Balcony", status: "Healthy", water_in: "12 days", img: "https://images.unsplash.com/photo-1599598425947-321124233f2e?auto=format&fit=crop&q=80&w=200" },
-    { id: 4, name: "Aloe Vera", location: "Kitchen", status: "Healthy", water_in: "7 days", img: "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&q=80&w=200" },
-];
+
 
 const MyJungle = () => {
     return (
