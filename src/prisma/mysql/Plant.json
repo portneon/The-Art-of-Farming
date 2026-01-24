@@ -1,0 +1,1902 @@
+[
+    {
+        "id": "1",
+        "common_name": "Holy Basil (Tulsi)",
+        "scientific_name": "Ocimum tenuiflorum",
+        "family": "Lamiaceae",
+        "origin": "India",
+        "description": "Revered in India as a sacred plant, Tulsi is an aromatic perennial herb known for its incredible medicinal properties and spiritual significance.",
+        "botanical_fact": "Tulsi releases oxygen for 20 hours a day and also absorbs harmful gases like carbon monoxide, carbon dioxide and sulphur dioxide.",
+        "image_url": "https://images.unsplash.com/photo-1761926783705-61fb59d80c98?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Ayurvedic Immunity Booster",
+            "Stress Relief (Adaptogen)",
+            "Respiratory Health"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep soil moist",
+                "frequency": "Daily (Summer)"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "Occasional Mist"
+            },
+            "temperature": {
+                "text": "Warm (70-90°F)",
+                "frequency": "Avoid Frost"
+            }
+        }
+    },
+    {
+        "id": "2",
+        "common_name": "Aloe Vera",
+        "scientific_name": "Aloe barbadensis miller",
+        "family": "Asphodelaceae",
+        "origin": "Arabian Peninsula",
+        "description": "A succulent plant species that is widely known for its soothing gel, used to treat sunburns and skin irritations.",
+        "botanical_fact": "Aloe Vera closes its stomata during the day to prevent water loss and opens them at night to absorb CO2 (CAM photosynthesis).",
+        "image_url": "https://images.unsplash.com/photo-1490370946242-34092dbf29f8?q=80&w=3274&auto=format",
+        "benefits": [
+            "Skin Healing",
+            "Air Purification",
+            "Digestive Health"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Mild (if ingested)"
+        },
+        "care": {
+            "water": {
+                "text": "Let dry completely",
+                "frequency": "2-3 Weeks"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm (55-80°F)",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "3",
+        "common_name": "Curry Leaf (Kadi Patta)",
+        "scientific_name": "Murraya koenigii",
+        "family": "Rutaceae",
+        "origin": "India",
+        "description": "An essential aromatic herb in Indian cuisine, the curry tree adds a distinct flavor to dishes and possesses strong antioxidant properties.",
+        "botanical_fact": "The leaves are rich in carbazole alkaloids, which have significant antioxidant and anti-inflammatory properties.",
+        "image_url": "https://images.unsplash.com/photo-1623048839784-a5608f7a7097?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Improves Digestion",
+            "Hair Health",
+            "Blood Sugar Control"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Moderate",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm (65-90°F)",
+                "frequency": "Avoid Cold"
+            }
+        }
+    },
+    {
+        "id": "4",
+        "common_name": "Peppermint (Pudina)",
+        "scientific_name": "Mentha × piperita",
+        "family": "Lamiaceae",
+        "origin": "Europe/Middle East",
+        "description": "A vigorous grower known for its refreshing scent and cooling taste. Ideal for chutneys, teas, and digestive aids.",
+        "botanical_fact": "Mint sends out runners (stolons) that grow just above or below the ground, allowing it to spread rapidly.",
+        "image_url": "https://images.unsplash.com/photo-1622110088500-8b8bf095511b?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Digestive Aid",
+            "Cooling Effect",
+            "Headache Relief"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Very Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Every 2-3 Days"
+            },
+            "light": {
+                "text": "Partial Sun",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Occasionally"
+            },
+            "temperature": {
+                "text": "Cool to Warm",
+                "frequency": "Flexible"
+            }
+        }
+    },
+    {
+        "id": "5",
+        "common_name": "Indian Borage (Ajwain/Mexican Mint)",
+        "scientific_name": "Coleus amboinicus",
+        "family": "Lamiaceae",
+        "origin": "Southern/Eastern Africa",
+        "description": "A semi-succulent herb with thick, fuzzy leaves that smell like oregano/thyme. Used traditionally for coughs and colds.",
+        "botanical_fact": "The stem is distinctively square in cross-section, a characteristic feature of the mint family.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Carom_Flowers.jpg/500px-Carom_Flowers.jpg",
+        "benefits": [
+            "Relieves Cold/Cough",
+            "Digestive Aid",
+            "Air Purification"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Let dry slightly",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "6",
+        "common_name": "Hibiscus",
+        "scientific_name": "Hibiscus rosa-sinensis",
+        "family": "Malvaceae",
+        "origin": "Asia",
+        "description": "A tropical beauty with vibrant, large trumpet-shaped flowers. The flowers are edible and used for herbal teas and hair care.",
+        "botanical_fact": "Hibiscus flowers typically last only one day, but the plant blooms prolifically.",
+        "image_url": "https://images.unsplash.com/photo-1622396727845-c15ef9ffb419?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Hair Growth (Ayurvedic)",
+            "Lowers Blood Pressure",
+            "Vitamin C Source"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Daily (Summer)"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Weekly"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Protect from frost"
+            }
+        }
+    },
+    {
+        "id": "7",
+        "common_name": "Lemongrass",
+        "scientific_name": "Cymbopogon citratus",
+        "family": "Poaceae",
+        "origin": "Sri Lanka/India",
+        "description": "A tall, stalky plant with a fresh lemon scent. Used extensively in teas, soups, and as a natural mosquito repellent.",
+        "botanical_fact": "It contains citral, the oil responsible for its lemon scent and insect-repelling properties.",
+        "image_url": "https://images.unsplash.com/photo-1654659932057-5163eb80289d?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Mosquito Repellent",
+            "Relieves Anxiety",
+            "Anti-fungal"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "2-3 times/week"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "8",
+        "common_name": "Butterfly Pea (Aparajita)",
+        "scientific_name": "Clitoria ternatea",
+        "family": "Fabaceae",
+        "origin": "Tropical Asia",
+        "description": "A vine producing striking blue flowers that are used to make blue herbal tea which changes color with lime juice.",
+        "botanical_fact": "Its roots fix nitrogen in the soil, improving soil health for other plants.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Clitoria_ternatea_flower_by_Dr._Raju_Kasambe_DSCN1517_%288%29.jpg/500px-Clitoria_ternatea_flower_by_Dr._Raju_Kasambe_DSCN1517_%288%29.jpg",
+        "benefits": [
+            "Brain Tonic (Medhya)",
+            "Stress Relief",
+            "Visual Beauty"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "3-4 times/week"
+            },
+            "light": {
+                "text": "Full/Partial Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "9",
+        "common_name": "Coriander (Dhania)",
+        "scientific_name": "Coriandrum sativum",
+        "family": "Apiaceae",
+        "origin": "Southern Europe",
+        "description": "A delicate herb with lacy leaves, essential for garnishing. Both leaves and seeds are used in cooking.",
+        "botanical_fact": "It is an annual herb, meaning it completes its life cycle in one year or season.",
+        "image_url": "https://images.unsplash.com/photo-1588879460618-9249e7d947d1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yaWFuZGVyfGVufDB8fDB8fHww",
+        "benefits": [
+            "Detoxifies Heavy Metals",
+            "Rich in Vitamin K",
+            "Culinary Staple"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep soil moist",
+                "frequency": "Daily (Light)"
+            },
+            "light": {
+                "text": "Partial Sun",
+                "frequency": "4-5 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "Mist in dry heat"
+            },
+            "temperature": {
+                "text": "Cooler (60-75°F)",
+                "frequency": "Sensitive to Heat"
+            }
+        }
+    },
+    {
+        "id": "10",
+        "common_name": "Periwinkle (Sadabahar)",
+        "scientific_name": "Catharanthus roseus",
+        "family": "Apocynaceae",
+        "origin": "Madagascar",
+        "description": "An evergreen shrub that blooms year-round with pink or white flowers. Known for containing alkaloids used in modern medicine.",
+        "botanical_fact": "Source of vincristine and vinblastine, powerful compounds used in chemotherapy.",
+        "image_url": "https://plus.unsplash.com/premium_photo-1743575810132-f16ff48177a4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyaXdpbmtsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Anti-diabetic",
+            "Wound Healing",
+            "Year-round Blooms"
+        ],
+        "stats": {
+            "difficulty": "Very Easy",
+            "growth_rate": "Medium",
+            "toxicity": "Toxic if ingested"
+        },
+        "care": {
+            "water": {
+                "text": "Moderate",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Any",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Hot",
+                "frequency": "Tolerates Heat"
+            }
+        }
+    },
+    {
+        "id": "11",
+        "common_name": "Snake Plant",
+        "scientific_name": "Dracaena trifasciata",
+        "family": "Asparagaceae",
+        "origin": "West Africa",
+        "description": "An architectural plant with upright sword-like leaves. It is practically indestructible and an excellent air purifier.",
+        "botanical_fact": "One of the few plants that converts CO2 to Oxygen at night, making it ideal for bedrooms.",
+        "image_url": "https://images.unsplash.com/photo-1613498630970-f2a333cb4974?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNuYWtlJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Removes Toxins (Benzene)",
+            "Nighttime Oxygen",
+            "Low Maintenance"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Mild"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "2-3 Weeks"
+            },
+            "light": {
+                "text": "Low to Bright",
+                "frequency": "Flexible"
+            },
+            "humidity": {
+                "text": "Any",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Average",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "12",
+        "common_name": "Betel Leaf (Paan)",
+        "scientific_name": "Piper betle",
+        "family": "Piperaceae",
+        "origin": "Southeast Asia",
+        "description": "A heart-shaped glossy creeper with deep cultural significance in India. The leaf has a peppery taste and digestive benefits.",
+        "botanical_fact": "It belongs to the same family as black pepper and requires a support structure to climb.",
+        "image_url": "https://images.unsplash.com/photo-1740474975256-ed7c1527ce04?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJldGVsJTIwbGVhZnxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Digestive Aid",
+            "Natural Breath Freshener",
+            "Ornamental Vine"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Partial Shade",
+                "frequency": "Avoid Direct Sun"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Often"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Protect from Cold"
+            }
+        }
+    },
+    {
+        "id": "13",
+        "common_name": "Jasmine (Mogra)",
+        "scientific_name": "Jasminum sambac",
+        "family": "Oleaceae",
+        "origin": "Himalayas",
+        "description": "Famous for its intensely fragrant white flowers that bloom in the evening. A favorite for garlands and perfumes.",
+        "botanical_fact": "The flowers contain volatile oils that are used in aromatherapy for relaxation.",
+        "image_url": "https://images.unsplash.com/photo-1612380635121-411eda9ecbb9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amFzbWluZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Aromatherapy (Calming)",
+            "Antiseptic Properties",
+            "Ornamental"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "2-3 times/week"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Occasionally"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "14",
+        "common_name": "Marigold (Genda)",
+        "scientific_name": "Tagetes erecta",
+        "family": "Asteraceae",
+        "origin": "Mexico",
+        "description": "Bright orange or yellow flowers that are a staple in Indian festivals. They also act as a natural pest deterrent in gardens.",
+        "botanical_fact": "Roots release thiophenes, which repel harmful nematodes in the soil.",
+        "image_url": "https://images.unsplash.com/photo-1661142175513-a5f0871f1ad1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFyaWdvbGR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Natural Pest Repellent",
+            "Skin Healing (Salve)",
+            "Edible Petals"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Mild (to pets)"
+        },
+        "care": {
+            "water": {
+                "text": "Base watering",
+                "frequency": "When dry"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Flexible"
+            }
+        }
+    },
+    {
+        "id": "15",
+        "common_name": "Money Plant (Pothos)",
+        "scientific_name": "Epipremnum aureum",
+        "family": "Araceae",
+        "origin": "French Polynesia",
+        "description": "A hardy trailing vine with heart-shaped leaves, variegated with yellow or white. Believed to bring good luck and wealth.",
+        "botanical_fact": "It is one of the few plants that can survive in near-darkness, though it loses variegation.",
+        "image_url": "https://images.unsplash.com/photo-1623752862599-0cd2b003a26f?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "benefits": [
+            "Air Purification (Formaldehyde)",
+            "Vastu/Feng Shui",
+            "Low Light Tolerance"
+        ],
+        "stats": {
+            "difficulty": "Very Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Dry slightly",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Indirect",
+                "frequency": "Flexible"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "Mist Weekly"
+            },
+            "temperature": {
+                "text": "Average",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "16",
+        "common_name": "Fenugreek (Methi)",
+        "scientific_name": "Trigonella foenum-graecum",
+        "family": "Fabaceae",
+        "origin": "Near East",
+        "description": "A quick-growing annual herb with small white flowers. Seeds and leaves are used for flavoring and medicine.",
+        "botanical_fact": "The seeds contain galactomannan, which helps slow down sugar absorption in the stomach.",
+        "image_url": "https://images.unsplash.com/photo-1707065879790-256dec8f3760?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmVudWdyZWVrfGVufDB8fDB8fHww",
+        "benefits": [
+            "Lowers Blood Sugar",
+            "Digestive Health",
+            "Nutrient Dense"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool/Warm",
+                "frequency": "Flexible"
+            }
+        }
+    },
+    {
+        "id": "17",
+        "common_name": "Rosemary",
+        "scientific_name": "Salvia rosmarinus",
+        "family": "Lamiaceae",
+        "origin": "Mediterranean",
+        "description": "A woody, perennial herb with fragrant, evergreen, needle-like leaves. Excellent for culinary use and memory enhancement.",
+        "botanical_fact": "Contains carnosic acid, which fights off free radical damage in the brain.",
+        "image_url": "https://images.unsplash.com/photo-1594313016519-640ed47407ea?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm9zZW1hcnl8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Memory Booster",
+            "Hair Growth Oil",
+            "Culinary Herb"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Slow",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "Rarely"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "18",
+        "common_name": "Giloy (Heart-leaved Moonseed)",
+        "scientific_name": "Tinospora cordifolia",
+        "family": "Menispermaceae",
+        "origin": "India",
+        "description": "A climbing shrub known as 'Amrita' (root of immortality) in Ayurveda. It has heart-shaped leaves and is a powerful immunity booster.",
+        "botanical_fact": "It is a deciduous climber that sends down aerial roots from branches.",
+        "image_url": "data:image/jpeg;base64,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",
+        "benefits": [
+            "Supreme Immunity Booster",
+            "Treats Chronic Fever",
+            "Anti-inflammatory"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Moderate",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Partial/Full Sun",
+                "frequency": "Flexible"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "19",
+        "common_name": "Lavender",
+        "scientific_name": "Lavandula",
+        "family": "Lamiaceae",
+        "origin": "Mediterranean",
+        "description": "Famous for its purple flowers and soothing fragrance. Used in teas, sachets, and essential oils.",
+        "botanical_fact": "The scent comes from oil glands on the leaf surface that burst when rubbed.",
+        "image_url": "https://images.pexels.com/photos/414949/pexels-photo-414949.jpeg?cs=srgb&dl=pexels-pixabay-414949.jpg&fm=jpg",
+        "benefits": [
+            "Sleep Aid",
+            "Stress Relief",
+            "Pollinator Friendly"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "Sparse"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "Avoid Humidity"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Airy"
+            }
+        }
+    },
+    {
+        "id": "20",
+        "common_name": "Spider Plant",
+        "scientific_name": "Chlorophytum comosum",
+        "family": "Asparagaceae",
+        "origin": "South Africa",
+        "description": "Produces arching leaves and small 'spiderettes' that hang down. Highly adaptable and easy to propagate.",
+        "botanical_fact": "The fleshy roots store water, allowing it to survive inconsistent watering.",
+        "image_url": "https://images.unsplash.com/photo-1611527664689-d430dd2a6774?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BpZGVyJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Air Purification",
+            "Pet Safe",
+            "Decor (Hanging)"
+        ],
+        "stats": {
+            "difficulty": "Very Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "Flexible"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "Mist Occasionally"
+            },
+            "temperature": {
+                "text": "Average",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "21",
+        "common_name": "Areca Palm",
+        "scientific_name": "Dypsis lutescens",
+        "family": "Arecaceae",
+        "origin": "Madagascar",
+        "description": "A graceful palm with feathery fronds that adds a tropical touch. Effective at humidifying indoor air.",
+        "botanical_fact": "One of the top air-purifying plants identified by NASA for removing xylene and toluene.",
+        "image_url": "https://plus.unsplash.com/premium_photo-1680435083006-32b1a77b790f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFyZWNhJTIwcGFsbXxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Natural Humidifier",
+            "Air Purification",
+            "Visual Screening"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Slow",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "No Direct Sun"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Often"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "22",
+        "common_name": "Ashwagandha",
+        "scientific_name": "Withania somnifera",
+        "family": "Solanaceae",
+        "origin": "India",
+        "description": "Known as 'Indian Ginseng', this shrub is central to Rasayana (rejuvenation) therapy in Ayurveda.",
+        "botanical_fact": "The name means 'smell of the horse', referring to the fresh root's distinct odor and its ability to impart strength.",
+        "image_url": "https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXNod2FnYW5kaGF8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Stress Reduction",
+            "Vitality Booster",
+            "Neuroprotection"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Roots are medicinal"
+        },
+        "care": {
+            "water": {
+                "text": "Dry slightly",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "23",
+        "common_name": "Tomato",
+        "scientific_name": "Solanum lycopersicum",
+        "family": "Solanaceae",
+        "origin": "South America",
+        "description": "A staple kitchen garden plant. Homegrown tomatoes are significantly more flavorful than store-bought ones.",
+        "botanical_fact": "Botanically a fruit (berry), though culinarily treated as a vegetable.",
+        "image_url": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Rich in Lycopene",
+            "Vitamin C Source",
+            "Edible Fruit"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Fast",
+            "toxicity": "Leaves are toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular/Deep",
+                "frequency": "Daily (Summer)"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Sensitive to Frost"
+            }
+        }
+    },
+    {
+        "id": "24",
+        "common_name": "Peace Lily",
+        "scientific_name": "Spathiphyllum",
+        "family": "Araceae",
+        "origin": "Tropical Americas",
+        "description": "Features dark green leaves and white 'hooded' flowers. It communicates its water needs by drooping dramatically.",
+        "botanical_fact": "The white 'flower' is actually a bract (modified leaf) surrounding the spadix.",
+        "image_url": "https://images.unsplash.com/photo-1687858001773-d58b6cec5bdf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVhY2UlMjBsaWx5fGVufDB8fDB8fHww",
+        "benefits": [
+            "Air Purification (Ammonia)",
+            "Mold Spore Removal",
+            "Aesthetic White Blooms"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Medium",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Twice Weekly"
+            },
+            "light": {
+                "text": "Low/Shade",
+                "frequency": "No Direct Sun"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Often"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "25",
+        "common_name": "Green Chilli",
+        "scientific_name": "Capsicum annuum",
+        "family": "Solanaceae",
+        "origin": "Americas",
+        "description": "Essential for adding spice to food. The plant is compact and produces white flowers followed by green/red peppers.",
+        "botanical_fact": "The 'heat' comes from capsaicin, which is concentrated in the white pith inside the pepper.",
+        "image_url": "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Boosts Metabolism",
+            "Rich in Vitamin C",
+            "Culinary Spice"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Moderate",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Heat Lover"
+            }
+        }
+    },
+    {
+        "id": "26",
+        "common_name": "Thyme",
+        "scientific_name": "Thymus vulgaris",
+        "family": "Lamiaceae",
+        "origin": "Mediterranean",
+        "description": "A low-growing woody herb with tiny leaves. It has a strong, earthy flavor and strong antiseptic properties.",
+        "botanical_fact": "Thyme contains thymol, a primary ingredient in Listerine mouthwash.",
+        "image_url": "https://images.unsplash.com/photo-1589562037508-ae76f4c445e2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGh5bWV8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Antiseptic",
+            "Respiratory Health",
+            "Culinary Herb"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Slow",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "Sparse"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "27",
+        "common_name": "Stevia",
+        "scientific_name": "Stevia rebaudiana",
+        "family": "Asteraceae",
+        "origin": "South America",
+        "description": "Known as 'Sweet Leaf', this plant is a natural, calorie-free sweetener used as a sugar substitute.",
+        "botanical_fact": "The leaves are 30 to 150 times sweeter than sugar but do not spike insulin.",
+        "image_url": "https://images.unsplash.com/photo-1517868750774-cee9b34b7a48?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0ZXZpYXxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Natural Sweetener",
+            "Diabetic Friendly",
+            "Low Calorie"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Frost Sensitive"
+            }
+        }
+    },
+    {
+        "id": "28",
+        "common_name": "Rubber Plant",
+        "scientific_name": "Ficus elastica",
+        "family": "Moraceae",
+        "origin": "Southeast Asia",
+        "description": "A popular ornamental plant with thick, glossy, burgundy or green leaves. It can grow into a large tree but stays manageable in pots.",
+        "botanical_fact": "Its milky latex sap was once used to produce rubber before Hevea brasiliensis became the primary source.",
+        "image_url": "https://images.unsplash.com/photo-1672062518782-706d6122c0e7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cnViYmVyJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Air Purification",
+            "Statement Decor",
+            "Low Maintenance"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Medium",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Dry top inch",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "Wipe leaves"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "29",
+        "common_name": "Brahmi",
+        "scientific_name": "Bacopa monnieri",
+        "family": "Plantaginaceae",
+        "origin": "Wetlands of India",
+        "description": "A creeping herb that thrives in wet soil. Renowned in Ayurveda for boosting cognitive function and memory.",
+        "botanical_fact": "It is an aquatic/semi-aquatic plant, often found growing in marshes.",
+        "image_url": "https://images.unsplash.com/photo-1698129658464-6e4291cf7a2f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmFjb3BhJTIwbW9ubmllcml8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Memory Booster",
+            "Stress Relief",
+            "Antioxidant"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Very Moist",
+                "frequency": "Daily"
+            },
+            "light": {
+                "text": "Partial Sun",
+                "frequency": "4 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Essential"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "30",
+        "common_name": "Lemon Balm",
+        "scientific_name": "Melissa officinalis",
+        "family": "Lamiaceae",
+        "origin": "Europe",
+        "description": "A lemon-scented herb from the mint family. It is calming and often used in teas to reduce stress.",
+        "botanical_fact": "The flowers are rich in nectar and are a favorite of honeybees (Melissa is Greek for 'honey bee').",
+        "image_url": "https://images.unsplash.com/photo-1625414501938-2c381686ea4d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGVtb24lMjBiYWxtfGVufDB8fDB8fHww",
+        "benefits": [
+            "Calming/Sedative",
+            "Antiviral",
+            "Digestive Aid"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Twice Weekly"
+            },
+            "light": {
+                "text": "Partial Shade",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool/Warm",
+                "frequency": "Flexible"
+            }
+        }
+    },
+    {
+        "id": "31",
+        "common_name": "Jade Plant",
+        "scientific_name": "Crassula ovata",
+        "family": "Crassulaceae",
+        "origin": "South Africa",
+        "description": "A succulent with fleshy, oval leaves. It resembles a miniature tree and is considered lucky in Feng Shui.",
+        "botanical_fact": "It can live for decades, often being passed down through generations.",
+        "image_url": "https://unsplash.com/photos/a-close-up-of-a-plant-in-a-pot-oIjx89QKWhk",
+        "benefits": [
+            "Symbol of Good Luck",
+            "Air Purification",
+            "Drought Tolerant"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "2 Weeks"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Average",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "32",
+        "common_name": "Spinach (Palak)",
+        "scientific_name": "Spinacia oleracea",
+        "family": "Amaranthaceae",
+        "origin": "Persia",
+        "description": "A leafy green vegetable packed with iron and vitamins. Grows quickly in cooler weather.",
+        "botanical_fact": "Spinach is dioecious, meaning there are separate male and female plants.",
+        "image_url": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Iron Rich",
+            "Vitamin A & C",
+            "Culinary Staple"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Regularly"
+            },
+            "light": {
+                "text": "Partial Sun",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool",
+                "frequency": "Bolts in Heat"
+            }
+        }
+    },
+    {
+        "id": "33",
+        "common_name": "Bougainvillea (Dwarf)",
+        "scientific_name": "Bougainvillea glabra",
+        "family": "Nyctaginaceae",
+        "origin": "South America",
+        "description": "A thorny vine known for its paper-like bright colored bracts. Dwarf varieties are excellent for balcony pots.",
+        "botanical_fact": "The colorful parts are bracts (leaves), while the true flower is a tiny white tube inside.",
+        "image_url": "https://images.unsplash.com/photo-1558293842-c0fd3db86157?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Stunning Visuals",
+            "Pollinator Attractor",
+            "Drought Tolerant"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Mild (Thorns)"
+        },
+        "care": {
+            "water": {
+                "text": "Dry well",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Hot",
+                "frequency": "Heat Lover"
+            }
+        }
+    },
+    {
+        "id": "34",
+        "common_name": "Turmeric",
+        "scientific_name": "Curcuma longa",
+        "family": "Zingiberaceae",
+        "origin": "India",
+        "description": "A rhizomatous plant with large tropical leaves. The root is the golden spice known for anti-inflammatory properties.",
+        "botanical_fact": "Contains curcumin, a compound with potent medicinal properties, which is activated by black pepper.",
+        "image_url": "https://images.unsplash.com/photo-1615485925763-867862f80998?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Anti-inflammatory",
+            "Antiseptic",
+            "Culinary Spice"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Slow",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Regularly"
+            },
+            "light": {
+                "text": "Partial Sun",
+                "frequency": "Filtered"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Often"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Tropical"
+            }
+        }
+    },
+    {
+        "id": "35",
+        "common_name": "Ginger",
+        "scientific_name": "Zingiber officinale",
+        "family": "Zingiberaceae",
+        "origin": "Southeast Asia",
+        "description": "Similar to turmeric, this plant has bamboo-like foliage. The rhizome is a kitchen essential and a digestion remedy.",
+        "botanical_fact": "It is a cultigen, meaning it is not known to grow in the wild and was domesticated by humans.",
+        "image_url": "https://images.unsplash.com/photo-1615485925763-867862f80998?auto=format&fit=crop&q=80&w=1200",
+        "benefits": [
+            "Nausea Relief",
+            "Anti-inflammatory",
+            "Culinary Spice"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Slow",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Regularly"
+            },
+            "light": {
+                "text": "Partial Shade",
+                "frequency": "No Direct Sun"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Often"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Tropical"
+            }
+        }
+    },
+    {
+        "id": "36",
+        "common_name": "Sage",
+        "scientific_name": "Salvia officinalis",
+        "family": "Lamiaceae",
+        "origin": "Mediterranean",
+        "description": "A shrub with grey-green leaves and a savory, slightly peppery flavor. Used in smudging and cooking.",
+        "botanical_fact": "The genus name 'Salvia' comes from the Latin 'salvere', meaning 'to feel healthy' or 'to heal'.",
+        "image_url": "https://images.unsplash.com/photo-1648233750012-52148f08f07d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNhZ2V8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Menopause Relief",
+            "Cognitive Boost",
+            "Culinary Herb"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "Sparse"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool/Warm",
+                "frequency": "Hardy"
+            }
+        }
+    },
+    {
+        "id": "37",
+        "common_name": "Brinjal (Eggplant)",
+        "scientific_name": "Solanum melongena",
+        "family": "Solanaceae",
+        "origin": "India/Asia",
+        "description": "Produces glossy purple or green fruits. Smaller varieties thrive in containers.",
+        "botanical_fact": "Like tomatoes and potatoes, it belongs to the Nightshade family.",
+        "image_url": "https://images.unsplash.com/photo-1659260180173-8d58b38648f8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWdnJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "High Fiber",
+            "Antioxidants",
+            "Edible Fruit"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Leaves Toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Heat Lover"
+            }
+        }
+    },
+    {
+        "id": "38",
+        "common_name": "Oregano",
+        "scientific_name": "Origanum vulgare",
+        "family": "Lamiaceae",
+        "origin": "Mediterranean",
+        "description": "A staple herb for Italian cooking. It spreads as a low ground cover and has potent antibacterial properties.",
+        "botanical_fact": "In Greek, Oregano means 'Joy of the Mountain'.",
+        "image_url": "https://plus.unsplash.com/premium_photo-1678653651270-9f0f68119d99?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b3JlZ2Fub3xlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Antibacterial",
+            "Antioxidant",
+            "Pizza Herb"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Dry slightly",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Hardy"
+            }
+        }
+    },
+    {
+        "id": "39",
+        "common_name": "Zinnia",
+        "scientific_name": "Zinnia elegans",
+        "family": "Asteraceae",
+        "origin": "Mexico",
+        "description": "One of the easiest flowers to grow, producing bursts of color that attract butterflies.",
+        "botanical_fact": "Zinnias were the first flowers grown in space on the International Space Station.",
+        "image_url": "https://images.unsplash.com/photo-1657411658707-202453a7d061?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8emlubmF8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Attracts Butterflies",
+            "Cut Flowers",
+            "Vibrant Colors"
+        ],
+        "stats": {
+            "difficulty": "Very Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Base watering",
+                "frequency": "When dry"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "Prone to mildew"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Summer"
+            }
+        }
+    },
+    {
+        "id": "40",
+        "common_name": "Mustard (Sarson)",
+        "scientific_name": "Brassica juncea",
+        "family": "Brassicaceae",
+        "origin": "Himalayas",
+        "description": "Grown for its spicy greens (Sarson ka Saag) or seeds. Produces cheerful yellow flowers.",
+        "botanical_fact": "Mustard is used as a bio-fumigant to suppress soil-borne pests.",
+        "image_url": "https://images.unsplash.com/photo-1631678783715-f27855736ed2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzdGFyZHxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Edible Greens",
+            "Soil Health",
+            "Vitamin Rich"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool",
+                "frequency": "Winter Crop"
+            }
+        }
+    },
+    {
+        "id": "41",
+        "common_name": "Malabar Spinach",
+        "scientific_name": "Basella alba",
+        "family": "Basellaceae",
+        "origin": "Tropical Asia",
+        "description": "A vigorous climbing vine with fleshy leaves that taste like spinach. Thrives in heat where regular spinach fails.",
+        "botanical_fact": "The berries produce a deep red-violet dye used for food coloring and ink.",
+        "image_url": "https://images.unsplash.com/photo-1658315216371-c73e8a62747e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbGFiYXIlMjBzcGluYWNofGVufDB8fDB8fHww",
+        "benefits": [
+            "Heat Tolerant Greens",
+            "High Vitamin A/C",
+            "Decorative Vine"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Very Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep Moist",
+                "frequency": "Daily"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Loves it"
+            },
+            "temperature": {
+                "text": "Hot",
+                "frequency": "Frost Sensitive"
+            }
+        }
+    },
+    {
+        "id": "42",
+        "common_name": "Garlic",
+        "scientific_name": "Allium sativum",
+        "family": "Amaryllidaceae",
+        "origin": "Central Asia",
+        "description": "Easily grown from cloves. The greens (scapes) are edible, as are the bulbs. A powerhouse of immunity.",
+        "botanical_fact": "Allicin, the compound responsible for its smell and benefits, is only created when the clove is crushed.",
+        "image_url": "https://images.unsplash.com/photo-1717316262079-141e00b89635?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FybGljJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Immunity Booster",
+            "Heart Health",
+            "Antibacterial"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Moderate",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool",
+                "frequency": "Winter"
+            }
+        }
+    },
+    {
+        "id": "43",
+        "common_name": "Bitter Gourd (Karela)",
+        "scientific_name": "Momordica charantia",
+        "family": "Cucurbitaceae",
+        "origin": "India",
+        "description": "A vine producing bitter fruits essential for diabetes management. Needs a trellis to climb.",
+        "botanical_fact": "Contains polypeptide-p, a plant insulin known to lower blood sugar levels.",
+        "image_url": "https://images.unsplash.com/photo-1676994174279-102e0abff98f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Yml0dGVyJTIwZ291cmR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Diabetes Management",
+            "Blood Purifier",
+            "Liver Health"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Fast",
+            "toxicity": "Seeds toxic (raw)"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Daily"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6-8 Hours"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Summer"
+            }
+        }
+    },
+    {
+        "id": "44",
+        "common_name": "Adenium (Desert Rose)",
+        "scientific_name": "Adenium obesum",
+        "family": "Apocynaceae",
+        "origin": "Africa",
+        "description": "A succulent shrub with a thick, swollen trunk (caudex) and beautiful pink/red flowers. Bonsai-like appearance.",
+        "botanical_fact": "The swollen trunk stores water, allowing it to survive long periods of drought.",
+        "image_url": "https://plus.unsplash.com/premium_photo-1742559211610-132a4d3d7d37?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc2VydCUyMHJvc2V8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Ornamental",
+            "Drought Tolerant",
+            "Bonsai Suitable"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Toxic Sap"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "Bi-weekly"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6+ Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Hot",
+                "frequency": "Heat Lover"
+            }
+        }
+    },
+    {
+        "id": "45",
+        "common_name": "Shatavari",
+        "scientific_name": "Asparagus racemosus",
+        "family": "Asparagaceae",
+        "origin": "India/Himalayas",
+        "description": "A climbing plant with needle-like leaves, highly valued in Ayurveda for women's reproductive health.",
+        "botanical_fact": "The name Shatavari implies 'she who possesses a hundred husbands', referring to its rejuvenating effects.",
+        "image_url": "https://images.unsplash.com/photo-1696993159916-54f24fe56e67?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2hhdGF2YXJpfGVufDB8fDB8fHww",
+        "benefits": [
+            "Women's Tonic",
+            "Hormonal Balance",
+            "Immunity"
+        ],
+        "stats": {
+            "difficulty": "Moderate",
+            "growth_rate": "Medium",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Partial Shade",
+                "frequency": "Filtered"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Stable"
+            }
+        }
+    },
+    {
+        "id": "46",
+        "common_name": "Radish",
+        "scientific_name": "Raphanus sativus",
+        "family": "Brassicaceae",
+        "origin": "Asia",
+        "description": "One of the fastest-growing vegetables, ready to harvest in 3-4 weeks. Great for beginners.",
+        "botanical_fact": "Radishes are often used as 'companion plants' to lure pests away from other crops.",
+        "image_url": "https://images.unsplash.com/photo-1592346520936-9444037b2e28?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFkaXNofGVufDB8fDB8fHww",
+        "benefits": [
+            "Digestive Health",
+            "Fast Harvest",
+            "Edible Greens"
+        ],
+        "stats": {
+            "difficulty": "Very Easy",
+            "growth_rate": "Very Fast",
+            "toxicity": "Non-toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Every 2 Days"
+            },
+            "light": {
+                "text": "Full Sun",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool",
+                "frequency": "Winter"
+            }
+        }
+    },
+    {
+        "id": "47",
+        "common_name": "Sweet Potato Vine",
+        "scientific_name": "Ipomoea batatas",
+        "family": "Convolvulaceae",
+        "origin": "Americas",
+        "description": "Often grown for its ornamental chartreuse or purple foliage. It spills beautifully over container edges.",
+        "botanical_fact": "While related to the morning glory, it produces edible tubers unlike its decorative cousins.",
+        "image_url": "https://images.unsplash.com/photo-1683994857980-280afa59a3f8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN3ZWV0JTIwcG90YXRvJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Ornamental Foliage",
+            "Edible Tuber",
+            "Fast Cover"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Very Fast",
+            "toxicity": "Seeds toxic"
+        },
+        "care": {
+            "water": {
+                "text": "Keep moist",
+                "frequency": "Daily"
+            },
+            "light": {
+                "text": "Sun/Part Shade",
+                "frequency": "Flexible"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "Frost Sensitive"
+            }
+        }
+    },
+    {
+        "id": "48",
+        "common_name": "Chives",
+        "scientific_name": "Allium schoenoprasum",
+        "family": "Amaryllidaceae",
+        "origin": "Europe/Asia/NA",
+        "description": "A mild onion-flavored herb with hollow, grass-like leaves and purple pom-pom flowers.",
+        "botanical_fact": "Chives are the smallest species of the edible onions.",
+        "image_url": "https://images.unsplash.com/photo-1593149198123-46380dbd87fd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpdmVzfGVufDB8fDB8fHww",
+        "benefits": [
+            "Mild Onion Flavor",
+            "Attracts Bees",
+            "Nutrient Rich"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Fast",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Regular",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Sun/Part Shade",
+                "frequency": "4-6 Hours"
+            },
+            "humidity": {
+                "text": "Moderate",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Cool",
+                "frequency": "Hardy"
+            }
+        }
+    },
+    {
+        "id": "49",
+        "common_name": "Fiddle Leaf Fig",
+        "scientific_name": "Ficus lyrata",
+        "family": "Moraceae",
+        "origin": "West Africa",
+        "description": "Trendy indoor tree with huge, violin-shaped leaves. Adds immediate structural beauty to a room.",
+        "botanical_fact": "In the wild, it starts as an epiphyte, growing on top of other trees before sending roots down.",
+        "image_url": "https://images.unsplash.com/photo-1677428536327-d2aefcec578c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RmljdXMlMjBseXJhdGF8ZW58MHx8MHx8fDA%3D",
+        "benefits": [
+            "Statement Piece",
+            "Air Purification",
+            "Architectural Shape"
+        ],
+        "stats": {
+            "difficulty": "Hard",
+            "growth_rate": "Slow",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "When top dry",
+                "frequency": "Weekly"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "Strict"
+            },
+            "humidity": {
+                "text": "High",
+                "frequency": "Mist Daily"
+            },
+            "temperature": {
+                "text": "Warm",
+                "frequency": "No Drafts"
+            }
+        }
+    },
+    {
+        "id": "50",
+        "common_name": "Kalanchoe",
+        "scientific_name": "Kalanchoe blossfeldiana",
+        "family": "Crassulaceae",
+        "origin": "Madagascar",
+        "description": "A succulent that blooms with clusters of small, bright flowers in winter/spring. Very low maintenance.",
+        "botanical_fact": "Kalanchoe was one of the first plants sent into space on a Soviet resupply mission in 1971.",
+        "image_url": "https://images.unsplash.com/photo-1681769689116-252ac9081af8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEthbGFuY2hvZXxlbnwwfHwwfHx8MA%3D%3D",
+        "benefits": [
+            "Long Lasting Blooms",
+            "Air Purification",
+            "Drought Resistant"
+        ],
+        "stats": {
+            "difficulty": "Easy",
+            "growth_rate": "Slow",
+            "toxicity": "Toxic to Pets"
+        },
+        "care": {
+            "water": {
+                "text": "Dry completely",
+                "frequency": "2 Weeks"
+            },
+            "light": {
+                "text": "Bright Indirect",
+                "frequency": "6 Hours"
+            },
+            "humidity": {
+                "text": "Low",
+                "frequency": "None"
+            },
+            "temperature": {
+                "text": "Average",
+                "frequency": "Stable"
+            }
+        }
+    }
+]
