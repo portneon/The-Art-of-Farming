@@ -2,7 +2,34 @@ const prisma = require('../../src/db/mysqlCient');
 
 async function getPlants(req, res) {
     try {
-        const plants = await prisma.plantSpecies.findMany({take : 6});
+        const { search } = req.query;
+
+        // Build the query based on search parameter
+        const whereClause = search
+            ? {
+                OR: [
+                    {
+                        common_name: {
+                            contains: search,
+                            mode: 'insensitive'
+                        }
+                    },
+                    {
+                        scientific_name: {
+                            contains: search,
+                            mode: 'insensitive'
+                        }
+                    }
+                ]
+            }
+            : {};
+
+        const plants = await prisma.plantSpecies.findMany({
+            where: whereClause,
+            orderBy: {
+                common_name: 'asc'
+            }
+        });
 
         res.status(200).json({
             success: true,
