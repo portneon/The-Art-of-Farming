@@ -11,21 +11,21 @@ function Catalog() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    
+
     const fetchPlants = async () => {
       try {
         setLoading(true);
-        
-        const response = await fetch("http://localhost:3000/plants");
-        
+
+        const response = await fetch("https://theartoffarming.onrender.com/plants");
+
         if (!response.ok) throw new Error("API not available");
-        
+
         const result = await response.json();
         setPlants(result.data);
       } catch (error) {
         console.warn("error while fetching plant data ", error);
-        
-        
+
+
       } finally {
         setTimeout(() => setLoading(false), 1500);
       }
@@ -35,15 +35,15 @@ function Catalog() {
   }, []);
 
 
-  
+
   const filteredPlants = plants.filter((plant) =>
     plant.common_name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className=" min-h-screen bg-[#F4F5F0] pt-24 pb-20 px-6 md:px-12 lg:px-20">
-      
-   
+
+
       <div className="max-w-7xl mx-auto mb-16 text-center">
         <h1 className="font-serif text-5xl md:text-6xl text-[#1A2F1C] mb-6">
           The Botanical <span className="italic text-[#4A6741]">Catalog.</span>
@@ -66,34 +66,34 @@ function Catalog() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-             <button className="p-2 text-gray-400 hover:text-[#1A2F1C] transition-colors">
-                <Filter className="h-5 w-5" />
-             </button>
+            <button className="p-2 text-gray-400 hover:text-[#1A2F1C] transition-colors">
+              <Filter className="h-5 w-5" />
+            </button>
           </div>
         </div>
       </div>
 
-    
+
       <div className="max-w-7xl mx-auto">
         {loading ? (
-         
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <SkeletonCard key={n} />
             ))}
           </div>
         ) : filteredPlants.length > 0 ? (
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPlants.map((plant) => (
               <PlantCard key={plant.id} plant={plant} />
             ))}
           </div>
         ) : (
-         
+
           <div className="text-center py-20 opacity-60">
-             <h2 className="font-serif text-2xl text-[#1A2F1C]">No specimens found.</h2>
-             <p className="font-sans text-gray-500 mt-2">Try adjusting your search criteria.</p>
+            <h2 className="font-serif text-2xl text-[#1A2F1C]">No specimens found.</h2>
+            <p className="font-sans text-gray-500 mt-2">Try adjusting your search criteria.</p>
           </div>
         )}
       </div>

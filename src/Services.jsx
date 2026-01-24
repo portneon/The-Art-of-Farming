@@ -109,7 +109,7 @@ const Services = () => {
                 </div>
             </section>
 
-     
+
             <section className="py-24 px-6 md:px-20 bg-[#1A2F1C] text-[#F4F5F0]">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="font-serif text-4xl md:text-5xl mb-6">

@@ -10,9 +10,9 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // Clear previous errors
+    setError("");
     try {
-      const response = await fetch("http://localhost:3000/auth/login", {
+      const response = await fetch("https://theartoffarming.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -81,17 +81,17 @@ const Login = () => {
             </p>
           </div>
 
-          {/* Form */}
+
           <form className="space-y-8" onSubmit={handleSubmit}>
 
-            {/* Error Message */}
+
             {error && (
               <div className="bg-red-50 border border-red-200 text-[#C77D63] px-4 py-3 rounded-lg text-sm font-sans flex items-center justify-center">
                 {error}
               </div>
             )}
 
-            {/* Email Input - Underlined Style */}
+
             <div className="group relative">
               <label className="block font-mono text-xs text-[#4A6741] uppercase tracking-widest mb-2">
                 Email Address
@@ -138,7 +138,7 @@ const Login = () => {
 
           </form>
 
-          {/* Footer Links */}
+
           <div className="text-center pt-2">
             <p className="font-sans text-sm text-gray-500">
               Don't have a plot yet?{" "}

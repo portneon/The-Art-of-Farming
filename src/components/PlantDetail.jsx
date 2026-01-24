@@ -60,8 +60,8 @@ const PlantDetail = () => {
           return;
         }
 
-        
-        const response = await fetch(`http://localhost:3000/plants/${id}`);
+
+        const response = await fetch(`https://theartoffarming.onrender.com/plants/${id}`);
 
         if (!response.ok) {
           throw new Error("Specimen not found in archive.");
@@ -281,4 +281,4 @@ const MetricRow = ({ icon: Icon, label, value, text }) => (
   </div>
 );
 
-export default PlantDetail; 
+export default PlantDetail;
