@@ -11,34 +11,40 @@ function Catalog() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    // Debounce the search to avoid too many API calls
+    const timeoutId = setTimeout(() => {
+      const fetchPlants = async () => {
+        try {
+          setLoading(true);
 
-    const fetchPlants = async () => {
-      try {
-        setLoading(true);
+          // Build URL with search query parameter
+          const url = new URL("https://theartoffarming.onrender.com/plants");
+          if (searchTerm) {
+            url.searchParams.append("search", searchTerm);
+          }
 
-        const response = await fetch("https://theartoffarming.onrender.com/plants");
+          const response = await fetch(url.toString());
 
-        if (!response.ok) throw new Error("API not available");
+          if (!response.ok) throw new Error("API not available");
 
-        const result = await response.json();
-        setPlants(result.data);
-      } catch (error) {
-        console.warn("error while fetching plant data ", error);
+          const result = await response.json();
+          setPlants(result.data);
+        } catch (error) {
+          console.warn("error while fetching plant data ", error);
+        } finally {
+          setTimeout(() => setLoading(false), 500);
+        }
+      };
 
+      fetchPlants();
+    }, 500); // Wait 500ms after user stops typing
 
-      } finally {
-        setTimeout(() => setLoading(false), 1500);
-      }
-    };
+    // Cleanup function to cancel the timeout if searchTerm changes
+    return () => clearTimeout(timeoutId);
+  }, [searchTerm]);
 
-    fetchPlants();
-  }, []);
-
-
-
-  const filteredPlants = plants.filter((plant) =>
-    plant.common_name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // No need for client-side filtering anymore since backend handles it
+  const filteredPlants = plants;
 
   return (
     <div className=" min-h-screen bg-[#F4F5F0] pt-24 pb-20 px-6 md:px-12 lg:px-20">

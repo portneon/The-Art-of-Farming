@@ -41,7 +41,7 @@ const PlantChat = ({ plantName }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-[#1A2F1C]/10 shadow-sm overflow-hidden h-full flex flex-col">
+    <div className="bg-white rounded-2xl border border-[#1A2F1C]/10 shadow-sm  h-full flex flex-col">
 
       {/* Header */}
       <div className="bg-[#1A2F1C] p-4 flex items-center justify-between">
@@ -72,8 +72,8 @@ const PlantChat = ({ plantName }) => {
             </div>
 
             <div className={`max-w-[85%] p-3 rounded-xl text-sm leading-relaxed ${msg.role === "ai"
-                ? "bg-white border border-gray-200 text-[#1A2F1C] rounded-tl-none shadow-sm"
-                : "bg-[#1A2F1C] text-white rounded-tr-none"
+              ? "bg-white border border-gray-200 text-[#1A2F1C] rounded-tl-none shadow-sm"
+              : "bg-[#1A2F1C] text-white rounded-tr-none"
               }`}>
               {msg.text}
             </div>

@@ -25,7 +25,7 @@ const Login = () => {
       if (response.ok) {
         localStorage.setItem("token", data.token);
         localStorage.setItem("userName", data.name);
-        navigate("/dashboard");
+        navigate("/Home");
       } else {
         setError(data.error || "Login failed. Please check your credentials.");
       }
