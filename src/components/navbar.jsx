@@ -23,15 +23,22 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userName");
+    localStorage.removeItem("userId");
     setUserName(null);
     navigate("/");
   };
 
-  const navLinks = [
-    { name: "HOME", path: "/" },
-    { name: "CATALOG", path: "/plants" },
-    { name: "ABOUT", path: "/about" },
-  ];
+  const navLinks = userName
+    ? [
+      { name: "DASHBOARD", path: "/dashboard" },
+      { name: "CATALOG", path: "/plants" },
+      { name: "ABOUT", path: "/about" },
+    ]
+    : [
+      { name: "HOME", path: "/" },
+      { name: "CATALOG", path: "/plants" },
+      { name: "ABOUT", path: "/about" },
+    ];
 
   return (
     <>
