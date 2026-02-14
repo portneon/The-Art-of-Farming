@@ -73,7 +73,7 @@ const PlantDetail = () => {
         }
 
         // 2. Fetch from Backend
-        const response = await fetch(`https://theartoffarming.onrender.com/plants/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/plants/${id}`);
 
         if (!response.ok) {
           throw new Error("Specimen not found in archive.");

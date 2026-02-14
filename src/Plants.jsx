@@ -18,7 +18,7 @@ function Catalog() {
           setLoading(true);
 
           // Build URL with search query parameter
-          const url = new URL("https://theartoffarming.onrender.com/plants");
+          const url = new URL(`${import.meta.env.VITE_API_BASE_URL}/plants`);
           if (searchTerm) {
             url.searchParams.append("search", searchTerm);
           }

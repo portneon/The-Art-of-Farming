@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     setError("");
     try {
-      const response = await fetch("https://theartoffarming.onrender.com/auth/login", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,7 +25,8 @@ const Login = () => {
       if (response.ok) {
         localStorage.setItem("token", data.token);
         localStorage.setItem("userName", data.name);
-        navigate("/Home");
+        localStorage.setItem("userId", data.userId);
+        navigate("/dashboard");
       } else {
         setError(data.error || "Login failed. Please check your credentials.");
       }

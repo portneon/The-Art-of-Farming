@@ -7,14 +7,15 @@ import About from "./About";
 import Home from "./Home";
 import Register from "./Register";
 import LoginPage from "./Login";
-// import Dashboard from "./Dashboard";
+import Dashboard from "./Dashboard";
+import GardenDetailPage from "./GardenDetailPage";
+import MyPlantDetail from "./MyPlantDetail";
 import PlantDetail from "./components/PlantDetail";
 import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   const location = useLocation();
-  // const isDashboard = location.pathname === "/dashboard";
 
   return (
     <>
@@ -26,7 +27,9 @@ function App() {
         <Route path="/Plants" element={<Prop />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/garden/:gardenId" element={<GardenDetailPage />} />
+        <Route path="/my-plant/:plantId" element={<MyPlantDetail />} />
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/plants/:id" element={<PlantDetail />} />
 
