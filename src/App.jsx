@@ -1,27 +1,38 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Navbar from "./navbar";
+import Navbar from "./components/navbar";
 import Footer from "./Footer";
 import Prop from "./Plants";
 import About from "./About";
 import Home from "./Home";
-import ContactForm from "./Contact";
-import LoginPage from "./Login"; 
+import Register from "./Register";
+import LoginPage from "./Login";
+import Dashboard from "./Dashboard";
+import GardenDetailPage from "./GardenDetailPage";
+import MyPlantDetail from "./MyPlantDetail";
+import PlantDetail from "./components/PlantDetail";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   const location = useLocation();
-  const hideNavbar = location.pathname.toLowerCase() === "/plants";
 
   return (
     <>
-      {!hideNavbar && <Navbar />}
+      <ScrollToTop />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} /> 
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/Plants" element={<Prop />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactForm />} />
-        <Route path="/Login" element={<LoginPage />} /> 
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/garden/:gardenId" element={<GardenDetailPage />} />
+        <Route path="/my-plant/:plantId" element={<MyPlantDetail />} />
+        <Route path="/Login" element={<LoginPage />} />
+        <Route path="/plants/:id" element={<PlantDetail />} />
+
       </Routes>
       <Footer />
     </>
