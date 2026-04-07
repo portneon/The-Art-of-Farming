@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/navbar";
 import Footer from "./Footer";
 import Prop from "./Plants";
@@ -13,7 +18,7 @@ import MyPlantDetail from "./MyPlantDetail";
 import PlantDetail from "./components/PlantDetail";
 import ScrollToTop from "./components/ScrollToTop";
 
-// Protected route wrapper that redirects to dashboard if logged in
+
 const HomeOrDashboard = () => {
   const isLoggedIn = localStorage.getItem("token");
   return isLoggedIn ? <Navigate to="/dashboard" replace /> : <Home />;

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, Mail, Lock, Sprout } from "lucide-react";
+import { ArrowRight, Mail, Lock, Sprout, Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [flag, setFlag] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
-  // 🔹 Auto redirect if already logged in
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -159,13 +159,20 @@ const Login = () => {
               <div className="relative">
                 <Lock className="absolute left-0 top-3 text-gray-400 w-5 h-5" />
                 <input
-                  type="password"
+                  type={flag ? "text" : "password"}
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   className="w-full border-b border-gray-300 py-3 pl-8 focus:outline-none focus:border-[#C77D63]"
                 />
+                <button
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-100 transition"
+                  type="button"
+                  onClick={() => setFlag(!flag)}
+                >
+                  <div>{flag ? <EyeOff /> : <Eye />}</div>
+                </button>
               </div>
             </div>
 
