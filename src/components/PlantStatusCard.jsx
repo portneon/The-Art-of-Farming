@@ -1,106 +1,100 @@
 import React from "react";
-import { Droplets, Heart, AlertCircle } from "lucide-react";
+import { Droplets, Heart, AlertCircle, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PlantStatusCard = ({ plant }) => {
-    const getHealthColor = () => {
-        switch (plant.healthStatus) {
-            case 'Good':
-                return 'bg-green-100 text-green-700 border-green-200';
-            case 'NeedsAttention':
-                return 'bg-orange-100 text-orange-700 border-orange-200';
-            case 'Critical':
-                return 'bg-red-100 text-red-700 border-red-200';
-            default:
-                return 'bg-gray-100 text-gray-700 border-gray-200';
-        }
-    };
+  const getHealthColor = () => {
+    switch (plant.healthStatus) {
+      case "Good":
+        return "bg-[#4A6741]/10 text-[#4A6741] border-[#4A6741]/20";
+      case "NeedsAttention":
+        return "bg-[#D4A373]/10 text-[#D4A373] border-[#D4A373]/20";
+      case "Critical":
+        return "bg-[#C77D63]/10 text-[#C77D63] border-[#C77D63]/20";
+      default:
+        return "bg-[#1A2F1C]/5 text-[#1A2F1C]/60 border-[#1A2F1C]/10";
+    }
+  };
 
-    const getHealthIcon = () => {
-        switch (plant.healthStatus) {
-            case 'Good':
-                return <Heart size={14} className="fill-current" />;
-            case 'NeedsAttention':
-            case 'Critical':
-                return <AlertCircle size={14} />;
-            default:
-                return <Heart size={14} />;
-        }
-    };
+  const getHealthIcon = () => {
+    switch (plant.healthStatus) {
+      case "Good":
+        return <Heart size={12} className="fill-current" />;
+      case "NeedsAttention":
+      case "Critical":
+        return <AlertCircle size={12} />;
+      default:
+        return <Heart size={12} />;
+    }
+  };
 
-    const formatDate = (dateString) => {
-        if (!dateString) return 'Never';
-        const date = new Date(dateString);
-        const now = new Date();
-        const diffTime = Math.abs(now - date);
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-        if (diffDays === 0) return 'Today';
-        if (diffDays === 1) return 'Yesterday';
-        if (diffDays < 7) return `${diffDays} days ago`;
-        if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
-        return `${Math.floor(diffDays / 30)} months ago`;
-    };
-
-    return (
-        <Link
-            to={`/my-plant/${plant.id}`}
-            className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#1A2F1C]/5 hover:border-[#C77D63]/30 transform hover:-translate-y-1"
-        >
-            {/* Plant Image */}
-            <div className="relative aspect-[4/3] overflow-hidden bg-[#F4F5F0]">
-                {plant.species?.imageUrl ? (
-                    <img
-                        src={plant.species.imageUrl}
-                        alt={plant.nickname || plant.species.commonName}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#4A6741] to-[#1A2F1C]">
-                        <span className="text-white/50 font-serif text-4xl">🌿</span>
-                    </div>
-                )}
-
-                {/* Health Status Badge */}
-                <div className="absolute top-3 right-3">
-                    <div className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold border backdrop-blur-sm ${getHealthColor()}`}>
-                        {getHealthIcon()}
-                        <span className="hidden sm:inline">{plant.healthStatus || 'Good'}</span>
-                    </div>
-                </div>
-            </div>
-
-            {/* Plant Info */}
-            <div className="p-4">
-                <div className="mb-3">
-                    <h3 className="font-serif text-lg font-bold text-[#1A2F1C] mb-1 line-clamp-1">
-                        {plant.nickname || plant.species?.commonName || 'Unnamed Plant'}
-                    </h3>
-                    <p className="text-xs text-[#1A2F1C]/50 italic line-clamp-1">
-                        {plant.species?.scientificName || 'Unknown species'}
-                    </p>
-                    {plant.garden && (
-                        <p className="text-xs text-[#4A6741] font-mono mt-1">
-                            📍 {plant.garden.name}
-                        </p>
-                    )}
-                </div>
-
-                {/* Last Watered */}
-                <div className="flex items-center gap-2 pt-3 border-t border-[#1A2F1C]/5">
-                    <Droplets size={14} className="text-[#4A9EFF]" />
-                    <div className="flex-1">
-                        <p className="text-[10px] text-[#1A2F1C]/40 uppercase tracking-wider font-mono">
-                            Last Watered
-                        </p>
-                        <p className="text-xs text-[#1A2F1C] font-medium">
-                            {formatDate(plant.lastWatered)}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </Link>
+  const formatDate = (dateString) => {
+    if (!dateString) return "Never";
+    const date = new Date(dateString);
+    const diffDays = Math.floor(
+      Math.abs(new Date() - date) / (1000 * 60 * 60 * 24),
     );
+    if (diffDays === 0) return "Today";
+    if (diffDays === 1) return "Yesterday";
+    if (diffDays < 7) return `${diffDays} days ago`;
+    return `${Math.floor(diffDays / 7)}w ago`;
+  };
+
+  return (
+    <Link
+      to={`/my-plant/${plant.id}`}
+      className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#1A2F1C]/5 hover:border-[#C77D63]/30"
+    >
+      <div className="relative aspect-[4/5] overflow-hidden bg-[#F4F5F0]">
+        {plant.species?.imageUrl ? (
+          <img
+            src={plant.species.imageUrl}
+            alt={plant.nickname || plant.species.commonName}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-[#1A2F1C]/5">
+            <Leaf className="text-[#1A2F1C]/20" size={48} strokeWidth={1} />
+          </div>
+        )}
+        <div className="absolute top-4 right-4">
+          <div
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest border backdrop-blur-md ${getHealthColor()}`}
+          >
+            {getHealthIcon()}
+            <span className="hidden sm:inline">
+              {plant.healthStatus || "Good"}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-5 flex flex-col flex-1">
+        <div className="mb-4 flex-1">
+          <h3 className="font-serif text-xl font-bold text-[#1A2F1C] mb-1 line-clamp-1">
+            {plant.nickname || plant.species?.commonName || "Specimen"}
+          </h3>
+          <p className="text-[10px] font-mono text-[#1A2F1C]/40 uppercase tracking-widest line-clamp-1">
+            {plant.species?.scientificName || "Unknown species"}
+          </p>
+        </div>
+
+        <div className="flex items-center gap-3 pt-4 border-t border-[#1A2F1C]/5">
+          <div className="p-2 bg-[#F4F5F0] rounded-lg">
+            <Droplets size={16} className="text-[#4A9EFF]" />
+          </div>
+          <div>
+            <p className="text-[10px] text-[#1A2F1C]/40 uppercase tracking-widest font-mono mb-0.5">
+              Last Watered
+            </p>
+            <p className="text-sm text-[#1A2F1C] font-medium">
+              {formatDate(plant.lastWatered)}
+            </p>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
 };
 
 export default PlantStatusCard;
