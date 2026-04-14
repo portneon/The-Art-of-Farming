@@ -1,0 +1,87 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  plants  Plant[]
+  gardens Garden[]
+}
+
+model Garden {
+  id          String  @id @default(cuid())
+  name        String
+  description String? @db.Text
+  imageUrl    String? @db.Text
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+
+  plants    Plant[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model PlantSpecies {
+  id               String @id @default(cuid())
+  common_name      String @unique
+  scientific_name  String
+  family           String
+  origin           String
+  description      String @db.LongText
+  care_water       String @db.Text
+  care_light       String @db.Text
+  care_humidity    String @db.Text
+  care_temperature String @db.Text
+  image_url        String @db.Text
+
+  plants    Plant[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Plant {
+  id     String @id @default(cuid())
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String
+
+  garden   Garden? @relation(fields: [gardenId], references: [id], onDelete: SetNull)
+  gardenId String?
+
+  plantSpecies   PlantSpecies? @relation(fields: [plantSpeciesId], references: [id], onDelete: SetNull)
+  plantSpeciesId String?
+
+  nickname       String?
+  location       String?
+  imageUrl       String?   @db.Text
+  lastWatered    DateTime?
+  lastFertilized DateTime?
+  healthStatus   String?   @default("Good") // Good, NeedsAttention, Critical
+  notes          String?   @db.Text
+
+  // Botanist consultation tracking
+  botanistAdvice    String?   @db.Text
+  botanistVisitDate DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([gardenId])
+  @@index([plantSpeciesId])
+}

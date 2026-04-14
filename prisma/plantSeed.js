@@ -1,4 +1,4 @@
-const prisma = require('../../db/mysqlCient');
+const prisma = require('../src/db/prismaClient');
 
 require('dotenv').config();
 

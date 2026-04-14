@@ -1,4 +1,4 @@
-const prisma = require('../../src/db/mysqlCient');
+const prisma = require('../../db/prismaClient');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -36,7 +36,7 @@ async function login(req, res) {
         if (!isPasswordValid) {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
-        const token = jwt.sign({ userId: user.id }, 'your_jwt_secret', { expiresIn: '1h' });
+        const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET || 'your_jwt_secret', { expiresIn: '1h' });
         res.json({ message: 'Login successful', token, name: user.name, userId: user.id });
     } catch (error) {
         console.error(error);
@@ -48,4 +48,3 @@ module.exports = {
     register,
     login
 };
-

@@ -1,4 +1,5 @@
-const prisma = require('../../../src/db/mysqlCient');
+const prisma = require('../../db/prismaClient');
+const { cloudinary } = require('../upload/cloudinary.config');
 
 /**
  * Create a new garden for a user
@@ -10,7 +11,6 @@ async function createGarden(req, res) {
         console.log('=== Create Garden API Called ===');
         console.log('Request body:', { userId, name, description });
 
-        // Validation
         if (!userId) {
             return res.status(400).json({
                 success: false,
@@ -56,6 +56,7 @@ async function createGarden(req, res) {
             data: {
                 name: name.trim(),
                 description: description?.trim() || null,
+                imageUrl: req.file ? req.file.path : null,
                 userId
             }
         });
@@ -69,6 +70,7 @@ async function createGarden(req, res) {
                 id: garden.id,
                 name: garden.name,
                 description: garden.description,
+                imageUrl: garden.imageUrl,
                 plantCount: 0,
                 createdAt: garden.createdAt,
                 updatedAt: garden.updatedAt
@@ -101,7 +103,7 @@ async function getGardenById(req, res) {
             });
         }
 
-        // Fetch garden with plants
+
         const garden = await prisma.garden.findUnique({
             where: { id: gardenId },
             include: {
@@ -136,6 +138,7 @@ async function getGardenById(req, res) {
                 id: garden.id,
                 name: garden.name,
                 description: garden.description,
+                imageUrl: garden.imageUrl,
                 plantCount: garden.plants.length,
                 createdAt: garden.createdAt,
                 updatedAt: garden.updatedAt,
@@ -144,6 +147,7 @@ async function getGardenById(req, res) {
                     id: p.id,
                     nickname: p.nickname,
                     location: p.location,
+                    imageUrl: p.imageUrl,
                     healthStatus: p.healthStatus,
                     lastWatered: p.lastWatered,
                     lastFertilized: p.lastFertilized,
@@ -216,8 +220,23 @@ async function updateGarden(req, res) {
             });
         }
 
+        // Handle image upload
+        let imageUrl = existingGarden.imageUrl;
+        if (req.file) {
+            // Delete old image if exists
+            if (existingGarden.imageUrl) {
+                const publicId = existingGarden.imageUrl.split('/').pop().split('.')[0]; // Extract public_id from URL
+                try {
+                    await cloudinary.uploader.destroy(`the-art-of-farming/plants/${publicId}`);
+                } catch (error) {
+                    console.warn('Failed to delete old image:', error);
+                }
+            }
+            imageUrl = req.file.path;
+        }
+
         // Build update data
-        const updateData = {};
+        const updateData = { imageUrl };
         if (name !== undefined) updateData.name = name.trim();
         if (description !== undefined) updateData.description = description?.trim() || null;
 
@@ -241,6 +260,7 @@ async function updateGarden(req, res) {
                 id: updatedGarden.id,
                 name: updatedGarden.name,
                 description: updatedGarden.description,
+                imageUrl: updatedGarden.imageUrl,
                 plantCount: updatedGarden._count.plants,
                 createdAt: updatedGarden.createdAt,
                 updatedAt: updatedGarden.updatedAt
@@ -315,5 +335,44 @@ module.exports = {
     createGarden,
     getGardenById,
     updateGarden,
-    deleteGarden
+    deleteGarden,
+    getUserGardens
 };
+
+/**
+ * Get all gardens for a user (for dropdowns / list views)
+ * GET /api/gardens?userId=
+ */
+async function getUserGardens(req, res) {
+    try {
+        const { userId } = req.query;
+
+        if (!userId) {
+            return res.status(400).json({ success: false, message: 'userId query param is required' });
+        }
+
+        const gardens = await prisma.garden.findMany({
+            where: { userId },
+            include: {
+                _count: { select: { plants: true } }
+            },
+            orderBy: { createdAt: 'desc' }
+        });
+
+        const data = gardens.map(g => ({
+            id: g.id,
+            name: g.name,
+            description: g.description,
+            imageUrl: g.imageUrl,
+            plantCount: g._count.plants,
+            createdAt: g.createdAt
+        }));
+
+        res.status(200).json({ success: true, count: data.length, data });
+
+    } catch (error) {
+        console.error('Error fetching user gardens:', error);
+        res.status(500).json({ success: false, message: 'Error fetching gardens', error: error.message });
+    }
+}
+

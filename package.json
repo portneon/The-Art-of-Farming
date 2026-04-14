@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "seed": "node src/prisma/mysql/plantSeed.js",
-    "migrate": "prisma migrate dev --schema=./src/prisma/mysql/schema.prisma"
+    "seed": "node prisma/plantSeed.js",
+    "migrate": "prisma migrate dev --schema=./prisma/schema.prisma"
   },
   "author": "",
   "license": "ISC",
@@ -14,12 +14,14 @@
   "dependencies": {
     "@prisma/client": "^5.16.0",
     "bcrypt": "^6.0.0",
+    "cloudinary": "^1.41.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^7.0.0",
     "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "multer-storage-cloudinary": "^4.0.0",
     "nodemon": "^3.1.11",
     "prisma": "^5.16.0"
   }

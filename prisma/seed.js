@@ -1,4 +1,4 @@
-const prisma = require('../../db/mysqlCient');
+const prisma = require('../src/db/prismaClient');
 const plantData = require('./Plant.json');
 const bcrypt = require('bcrypt');
 
