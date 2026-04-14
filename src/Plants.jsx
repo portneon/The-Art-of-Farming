@@ -11,13 +11,12 @@ function Catalog() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    // Debounce the search to avoid too many API calls
+  
     const timeoutId = setTimeout(() => {
       const fetchPlants = async () => {
         try {
           setLoading(true);
 
-          // Build URL with search query parameter
           const url = new URL(`${import.meta.env.VITE_API_BASE_URL}/plants`);
           if (searchTerm) {
             url.searchParams.append("search", searchTerm);
@@ -37,7 +36,7 @@ function Catalog() {
       };
 
       fetchPlants();
-    }, 500); // Wait 500ms after user stops typing
+    }, 500); 
 
     // Cleanup function to cancel the timeout if searchTerm changes
     return () => clearTimeout(timeoutId);

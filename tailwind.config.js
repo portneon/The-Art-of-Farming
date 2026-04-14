@@ -17,7 +17,7 @@ module.exports = {
         // Typography: "Editorial Precision"
         serif: ['"Playfair Display"', 'serif'], // Headings
         sans: ['"Inter"', 'sans-serif'],        // Body
-        mono: ['"Space Mono"', 'monospace'],    
+        mono: ['"Space Mono"', 'monospace'],
       },
       backgroundImage: {
         'glass-gradient': 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3))',

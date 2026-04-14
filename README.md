@@ -6,6 +6,7 @@
 
 ---
 
+
 ## What is this?
 
 The Art of Farming is a personal project born out of a simple idea: make plant and garden management feel less like a chore and more like an experience. Whether you're tracking what's growing in your garden or just curious about plants, this app gives you a clean, responsive interface to do it.
@@ -16,26 +17,26 @@ It's built entirely in React, powered by Vite, styled with Tailwind CSS, and ani
 
 ## Features
 
-- 🌿 Browse and manage garden plants
-- 🔌 Connected to live backend APIs for real data
-- 🎞️ Smooth page transitions and UI animations (Framer Motion + GSAP)
-- 📱 Fully responsive — works on mobile and desktop
-- 🔐 Environment-based API configuration for easy deployment
-- ⚡ Fast development and build times with Vite
+- Browse and manage garden plants
+- Connected to live backend APIs for real data
+- Smooth page transitions and UI animations (Framer Motion + GSAP)
+- Fully responsive — works on mobile and desktop
+- Environment-based API configuration for easy deployment
+- Fast development and build times with Vite
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | React 19 |
-| Bundler | Vite 6 |
-| Routing | React Router DOM v7 |
-| Styling | Tailwind CSS |
+| Layer      | Technology           |
+| ---------- | -------------------- |
+| Framework  | React 19             |
+| Bundler    | Vite 6               |
+| Routing    | React Router DOM v7  |
+| Styling    | Tailwind CSS         |
 | Animations | Framer Motion + GSAP |
-| Icons | Lucide React |
-| Deployment | Vercel |
+| Icons      | Lucide React         |
+| Deployment | Vercel               |
 
 ---
 
@@ -71,7 +72,7 @@ Then open `.env` and set your API base URL:
 VITE_API_BASE_URL=https://your-backend-url.com
 ```
 
-> ⚠️ Never commit your `.env` file. It's already in `.gitignore`, but good to keep in mind.
+> Never commit your `.env` file. It's already in `.gitignore`, but good to keep in mind.
 
 ### Running Locally
 
@@ -112,8 +113,8 @@ The-Art-of-Farming/
 
 ## Environment Variables
 
-| Variable | Description |
-|---|---|
+| Variable            | Description                 |
+| ------------------- | --------------------------- |
 | `VITE_API_BASE_URL` | Base URL of the backend API |
 
 All Vite environment variables must be prefixed with `VITE_` to be accessible on the client side. You can read more about this in the [ENV_README.md](./ENV_README.md).
@@ -143,4 +144,4 @@ This project is open source. Feel free to use it, learn from it, or build on top
 
 ---
 
-<p align="center">Made with 🌾 by <a href="https://github.com/portneon">portneon</a></p>
+<p align="center">Made with  by <a href="https://github.com/portneon">portneon</a></p>
